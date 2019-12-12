@@ -6,39 +6,50 @@ body {
 /* Styling af grid på forsiden */
 .container {
     display: grid;
-    grid-template-columns: 1fr;
-    /* grid-template-rows: repeat(5, 1fr); */
+    grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 4em;
-  
+    grid-template-areas: 
+        '. HCL .'
+        '. Design .'
+        '. Kommunikation .'
+        '. Portfolio .'
+        '. Kilder .'
+    ;
+
 
 }
 
 /* Definition af grid start */
 
-/* #HCL{
+#HCL {
     grid-area: HCL;
 }
-#Design{
+
+#Design {
     grid-area: Design;
 }
-#Kommunikation{
+
+#Kommunikation {
     grid-area: Kommunikation;
 }
-#Portfolio{
+
+#Portfolio {
     grid-area: Portfolio;
 }
-#Kilder{
+
+#Kilder {
     grid-area: Kilder;
-} */
+}
 
 /* Definition af grid slut */
+
 
 /* Stlyng a billeder i på forsiden. */
 img {
 
     display: block;
-    margin: auto;
     max-width: 300px;
+    margin: auto;
 
 }
 
