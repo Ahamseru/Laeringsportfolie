@@ -11,11 +11,20 @@
 <body>
 
     <header>
+        <section class="logo">
+            <a href="index.html"><img src="logo.png" alt="logo"></a>
+        </section>
+
         <!-- Navigationsbar start -->
-        <section>
+        <nav id="navbar">
 
             <ul>
-                <li class="dropdown"><a href="#">Forside</a>
+                <li class="dropdown"><a href="index.html">Forside</a>
+                    <section class="dropdown-content">
+                    </section>
+                </li>
+
+                <li class="dropdown"><a href="HTML_CSS_Layout.html">HTML CSS og Layout</a>
                     <section class="dropdown-content">
                         <a href="#">Link 1</a>
                         <a href="#">Link 2</a>
@@ -23,7 +32,7 @@
                     </section>
                 </li>
 
-                <li class="dropdown"><a href="#">HTML CSS og Layout</a>
+                <li class="dropdown"><a href="Design.html">Design</a>
                     <section class="dropdown-content">
                         <a href="#">Link 1</a>
                         <a href="#">Link 2</a>
@@ -31,7 +40,7 @@
                     </section>
                 </li>
 
-                <li class="dropdown"><a href="#">Design</a>
+                <li class="dropdown"><a href="Kommunikation.html">Kommunikation</a>
                     <section class="dropdown-content">
                         <a href="#">Link 1</a>
                         <a href="#">Link 2</a>
@@ -39,7 +48,7 @@
                     </section>
                 </li>
 
-                <li class="dropdown"><a href="#">Kommunikation</a>
+                <li class="dropdown"><a href="Portfolio.html">Om portfolioen</a>
                     <section class="dropdown-content">
                         <a href="#">Link 1</a>
                         <a href="#">Link 2</a>
@@ -47,15 +56,7 @@
                     </section>
                 </li>
 
-                <li class="dropdown"><a href="#">Om portfolioen</a>
-                    <section class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </section>
-                </li>
-
-                <li class="dropdown"><a href="#">Kilder</a>
+                <li class="dropdown"><a href="Kilder.html">Kilder</a>
                     <section class="dropdown-content">
                         <a href="#">Link 1</a>
                         <a href="#">Link 2</a>
@@ -65,7 +66,7 @@
 
             </ul>
 
-        </section>
+        </nav>
         <!-- Navigationsbar slut -->
 
 
@@ -77,27 +78,53 @@
     <section class="container">
 
         <!-- Billeder på forsiden start -->
+
         <section>
-            <a href="" id="HCL"><img src="html.png" alt="html logo"></a>
-            <a href="" id="Design"><img src="html.png" alt="html logo"></a>
-            <a href="" id="Kommunikation"><img src="html.png" alt="html logo"></a>
-            <a href="" id="Portfolio"><img src="html.png" alt="html logo"></a>
-            <a href="" id="Kilder"><img src="html.png" alt="html logo"></a>
-
-
-
+            <a href="HTML_CSS_Layout.html" id="HCL"><img src="html.png" alt="html logo"></a>
         </section>
-        <!-- Billeder på forsiden start -->
 
+        <section>
+            <a href="Design.html" id="Design"><img src="Design.png" alt="html logo"></a>
+        </section>
+
+        <section>
+            <a href="Kommunikation.html" id="Kommunikation"><img src="html.png" alt="html logo"></a>
+        </section>
+        <section>
+            <a href="Portfolio.html" id="Portfolio"><img src="html.png" alt="html logo"></a>
+        </section>
+        <section>
+            <a href="Kilder.html" id="Kilder"><img src="html.png" alt="html logo"></a>
+        </section>
+
+        <!-- Billeder på forsiden start -->
 
     </section>
     <!-- Grid slut -->
+
     <footer>
         Copyright© 2019 Ahmad Azzam. All rights reserved.
     </footer>
 
 
+    <!-- Funktionalitet for sticky menu start -->
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
 
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+    <!-- Funktionalitet for sticky menu slut -->
 
 </body>
 
