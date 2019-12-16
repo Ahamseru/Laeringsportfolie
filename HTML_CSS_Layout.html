@@ -5,104 +5,216 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:800|Fugaz+One|Heebo&display=swap" rel="stylesheet">
     <title>HTML, CSS og Layout</title>
 </head>
 
 <body>
     <header>
         <section class="logo">
-            <a href="index.html"><img src="logo.png" alt="logo"></a>
+            <a href="index.html" id="logo"><img src="logo.png" alt="logo"></a>
         </section>
 
-         <!-- Navigationsbar start -->
-         <nav id="navbar">
+        <!-- Navigationsbar start -->
+        <nav id="navbar">
 
-                <ul>
-                    <li class="dropdown"><a href="index.html">Forside</a>
-                        <section class="dropdown-content">
-                        </section>
-                    </li>
+            <ul>
+                <li class="dropdown"><a href="index.html">Forside</a>
+
+                </li>
+
+                <li class="dropdown"><a href="HTML_CSS_Layout.html">HTML CSS og Layout</a>
+
+                </li>
+
+                <li class="dropdown"><a href="Design.html">Design</a>
+
+                </li>
+
+                <li class="dropdown"><a href="Kommunikation.html">Kommunikation</a>
+
+                </li>
+
+                <li class="dropdown"><a href="Portfolio.html">Om portfolioen</a>
+
+                </li>
+
+                <li class="dropdown"><a href="Kilder.html">Kilder</a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+        <!-- Navigationsbar slut -->
+
+
+    </header>
+
+
+
     
-                    <li class="dropdown"><a href="HTML_CSS_Layout.html">HTML CSS og Layout</a>
-                        <section class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </section>
-                    </li>
-    
-                    <li class="dropdown"><a href="Design.html">Design</a>
-                        <section class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </section>
-                    </li>
-    
-                    <li class="dropdown"><a href="Kommunikation.html">Kommunikation</a>
-                        <section class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </section>
-                    </li>
-    
-                    <li class="dropdown"><a href="Portfolio.html">Om portfolioen</a>
-                        <section class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </section>
-                    </li>
-    
-                    <li class="dropdown"><a href="Kilder.html">Kilder</a>
-                        <section class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </section>
-                    </li>
-    
-                </ul>
-    
-            </nav>
-            <!-- Navigationsbar slut -->
-    
-    
-        </header>
-    
-        <h1>HTML, CSS og Layout</h1>
-    
+    <button type="button" class="collapsible">HTML, Editor og Kommentarer</button>
+    <section class="content">
+        <!-- HTML tekst start -->
+        <h3>HTML</h3>
+        <img src="Billeder/HTML banner.png" class="banner" alt="">
+        <p>HTML står for ”Hyper Text Markup Language”, og bruges til at opbygge skelettet af en hjemmeside. Dvs. at dets
+            primære formal er at få tekst, billeder, og afsnit ind på siden. Man kan derfor ikke have en hjemmeside uden
+            at mindst have noget HTML.
+            For at kunne gøre brug af HTML til opbygge en hjemmeside, så skal man bruge en ”editor”.
+        </p>
+           <!-- HTML tekst slut -->
+
+          
+        <h3>Editor</h3>
+
+        <p>
+            En editor er et
+            tekstredigeringsprogram hvori man skriver sin kode (eks. HTML, CSS, JavaScript, C#, C++ og mange flere).
+            Hvilken editor man skal vælge, er helt til op en selv. I kodeverdenen er det en smagsmag, alt efter om man
+            er til teksttype, farve, tema, layout, osv. Det kommer simpelthen an på, hvad man er mest til, og hvad der
+            passer en bedst. Personligt så bruger jeg Visual Studio Code, fordi den har de funktioner og det layout jeg
+            er mest vant til.
+            <br>
+            <br>
+            Editoren skriver i ren tekst og uden formatering (medmindre man har specielle extensions i en given editor,
+            der gør således at man får formatering og andre funktionaliteter på sin tekst). Editoren hjælper også med at
+            highlighte kode og er derfor en stor hjælp hvis man skulle skrive forkert. Den hjælper med at understrege
+            koden således at man nemt kan fine hvilke vendinger og kodesætninger der har mangler, eller er forkerte.
+            <br>
+            <br>
+            Herunder også linjenummer, hvilke konflikter det har med andre kode, og med en rød markering på ”scrolleren”
+            (det lille vindue der viser alt kode, som man kan scrolle op og ned i.) Derudover så er editoren også meget
+            god til at ”write ahead”, hvilket vil sige at den vil give forslag på at afslutte en kodesætning, alt efter
+            hvad man skriver. Dette er også med til at gøre kodeskrivning nemmere, ikke kun for professionelle, men også
+            begyndere.
+            <br>
+            <br>
+            Nogle editors har også en funktion der tillader programmøren at se et ”preview” på hvordan siden vil se ud,
+            med den kode man har indtil videre. Dette kan være meget dejligt at have integreret i sin editor, da man
+            hurtigt kan se hvordan hjemmesiden ser ud, om der er mangler, og måske style ting på en anden måde en man
+            lige tænkte over.
+        </p>
+
+        <h3>Kommentarer</h3>
+        <p>
+            Når man skal kode, er det en god idé at træne sin kodeskik. Dvs. at skrive koden i små afsnit ad gangen,
+            lave indrykninger med tabulatoren (”TAB”), linjeskift når det er nødvendigt, og ikke mindst
+            <b>kommentarer!</b>
+            Det er vildt vigtigt at skrive kommentarer til sin kode, da det ikke kun vil hjælpe en selv i fremtiden,
+            skulle man rette eller tilføje noget til koden, men det vil også hjælpe med at gøre koden mere læsbar
+            for andre, skulle de være nødt til at arbejde på den, eller hjælpe dig selv med den. Det gør det også
+            meget nemmere at finde rundt i koden, og giver koden en meget bedre struktur. Så derfor husk altid at
+            kommentér, kommentér, og atter kommentér!
+
+        </p>
+    </section>
+
+    <!-- CSS tekst start -->
+    <button type="button" class="collapsible">CSS</button>
+    <section class="content">
+        <h3>CSS</h3>
+        <img src="Billeder/CSS banner.png" class="banner" alt="">
+        <p>
+            CSS står for ”Cascading Style Sheets”, og er det computersprog der bruges til at style alt HTML. Hvis HTML
+            er skelettet på hjemmesiden, så er CSS’en huden, øjnene, ørene, munden, hovedet, armene, benene osv.
+            Herudover så bestemmer den også farverne, formerne og placeringen af disse ”kropsdele” på hjemmesiden. CSS
+            er stylisten der har smag indenfor alt mode, makeup, tøjstil, og farver. Uden CSS så ville hjemmesiden se
+            meget kedelig og død ud. Det ville bare være sort tekst på en hvid baggrund, uden noget struktur, og det
+            ville køre i en lang række nedad, og slet ikke være ordentligt sat op. CSS er absolut nødvendigt, hvis ikke
+            for farver, former, og design, så i det mindste for at kunne få det til at fungere på forskellige
+            skærmstørrelser, eller sagt på en anden måde, ”mobile first.
+            <br>
+            <br>
+            ”Mobile first” er den tilgang man tager til en hjemmeside med henblik på at opbygge den til mobilen først.
+            Dette vil ikke kun gøre det nemmere at arbejde med tablet og desktopstørrelsen senere hen, men også
+            eliminerer problemer som kunne have opstået, skulle man have startet med desktopversionen først. Mobile
+            first er en tilgang med henblik på at gøre sin hjemmeside 100% mobil venlig først, før alt det andet.
+            Syntaks for CSS (regel for hvordan det skal skrives op, og i hvilken rækkefølge) ser sådan her ud:
+        </p>
+        <img src="Billeder/CSS syntaks.jpg" alt="billede">
+
+    </section>
+
+    <!-- CSS tekst slut -->
+
+    <button type="button" class="collapsible">Tags, Attributter, Elementer, Semantik, SEO</button>
+    <section class="content">
+        <h2>Elementer</h2>
+        <p>
+            For at kunne bygge en hjemmeside op på en ordentlig måde gennem HTML, så skal man gøre brug af ”tags”. Tags
+            er med til at definere hvilket stykke kode er hvad, dvs. om det er f.eks. en paragraf, titel, undertitel,
+            artikel, billeder mm. Vi refererer til et stykke kode som har et start, og et slut tag, som et ”element”.
+            Man kan derfor også sige at en hjemmeside består af rigtig mange elementer
+            Et eksempel på et element kunne se således ud:
+            <br>
+            "<h1>Sikkerhed
+                <h1 />
+                <br>
+        </p>
+
+    </section>
+
+    <button type="button" class="collapsible">HTML</button>
+    <section class="content">
+        <p>Lorem ipsum...</p>
+    </section>
+
     <!-- Til top knap start -->
     <section>
         <a href="#logo" id="totop"><img src="top.png" alt="til toppen"></a>
     </section>
 
     <!-- Til top knap start -->
-    
-        <footer>
-            Copyright© 2019 Ahmad Azzam. All rights reserved.
-        </footer>
-    
-    
-        <!-- Funktionalitet for sticky menu start -->
-        <script>
-            window.onscroll = function () {
-                myFunction()
-            };
-    
-            var navbar = document.getElementById("navbar");
-            var sticky = navbar.offsetTop;
-    
-            function myFunction() {
-                if (window.pageYOffset >= sticky) {
-                    navbar.classList.add("sticky")
+
+    <footer>
+        Copyright© 2019 Ahmad Azzam. All rights reserved.
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Scripts -->
+    <!-- Scripts -->
+    <!-- Scripts -->
+    <!-- Scripts -->
+
+
+    <!-- Funktionalitet for collapsible start -->
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
                 } else {
-                    navbar.classList.remove("sticky");
+                    content.style.maxHeight = content.scrollHeight + "px";
                 }
+            });
+        }
+    </script>
+    <!-- Funktionalitet for collapsible slut -->
+
+
+    <!-- Funktionalitet af til top knap start -->
+    <script>
+        var mybutton = document.getElementById("totop");
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
             }
-        </script>
-        <!-- Funktionalitet for sticky menu slut -->
+        }
+    </script>
+    <!-- Funktionalitet af til top knap slut -->
 
 </body>
 

@@ -5,104 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:800|Fugaz+One|Heebo&display=swap" rel="stylesheet">
+
     <title>Kommunikation</title>
 </head>
 
 <body>
     <header>
         <section class="logo">
-            <a href="index.html"><img src="logo.png" alt="logo"></a>
+            <a href="index.html" id="logo"><img src="logo.png" alt="logo"></a>
         </section>
 
-         <!-- Navigationsbar start -->
-         <nav id="navbar">
+        <!-- Navigationsbar start -->
+        <nav id="navbar">
 
-                <ul>
-                    <li class="dropdown"><a href="index.html">Forside</a>
-                        <section class="dropdown-content">
-                        </section>
-                    </li>
-    
-                    <li class="dropdown"><a href="HTML_CSS_Layout.html">HTML CSS og Layout</a>
-                        <section class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </section>
-                    </li>
-    
-                    <li class="dropdown"><a href="Design.html">Design</a>
-                        <section class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </section>
-                    </li>
-    
-                    <li class="dropdown"><a href="Kommunikation.html">Kommunikation</a>
-                        <section class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </section>
-                    </li>
-    
-                    <li class="dropdown"><a href="Portfolio.html">Om portfolioen</a>
-                        <section class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </section>
-                    </li>
-    
-                    <li class="dropdown"><a href="Kilder.html">Kilder</a>
-                        <section class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </section>
-                    </li>
-    
-                </ul>
-    
-            </nav>
-            <!-- Navigationsbar slut -->
-    
-    
-        </header>
-    
-        <h1>Kommunikation</h1>
-    
+            <ul>
+                <li class="dropdown"><a href="index.html">Forside</a>
+
+                </li>
+
+                <li class="dropdown"><a href="HTML_CSS_Layout.html">HTML CSS og Layout</a>
+
+                </li>
+
+                <li class="dropdown"><a href="Design.html">Design</a>
+
+                </li>
+
+                <li class="dropdown"><a href="Kommunikation.html">Kommunikation</a>
+
+                </li>
+
+                <li class="dropdown"><a href="Portfolio.html">Om portfolioen</a>
+
+                </li>
+
+                <li class="dropdown"><a href="Kilder.html">Kilder</a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+        <!-- Navigationsbar slut -->
+
+
+    </header>
+
+    <h1>Kommunikation</h1>
+
+    <button type="button" class="collapsible">HTML</button>
+    <section class="content">
+        <p>HTML står for ”Hyper Text Markup Language”, og bruges til at opbygge skelettet af en hjemmeside. Dvs. at dets
+            primære formal er at få tekst, billeder, og afsnit ind på siden. Man kan derfor ikke have en hjemmeside uden
+            at mindst have noget HTML.
+            For at kunne gøre brug af HTML til opbygge en hjemmeside, så skal man bruge en ”editor”.
+        </p>
+        <p>
+            En editor er et
+            tekstredigeringsprogram hvori man skriver sin kode (eks. HTML, CSS, JavaScript, C#, C++ og mange flere).
+            Hvilken editor man skal vælge, er helt til op en selv. I kodeverdenen er det en smagsmag, alt efter om man
+            er til teksttype, farve, tema, layout, osv. Det kommer simpelthen an på, hvad man er mest til, og hvad der
+            passer en bedst. Personligt så bruger jeg Visual Studio Code, fordi den har de funktioner og det layout jeg
+            er mest vant til.
+        </p>
+
+        <img src="billede.jpg" alt="billede">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, id?</p>
+    </section>
+
+    <button type="button" class="collapsible">CSS</button>
+    <section class="content">
+        <p>Lorem ipsum...</p>
+    </section>
+
+    <button type="button" class="collapsible">HTML</button>
+    <section class="content">
+        <p>Lorem ipsum...</p>
+    </section>
+
+    <button type="button" class="collapsible">HTML</button>
+    <section class="content">
+        <p>Lorem ipsum...</p>
+    </section>
+
     <!-- Til top knap start -->
     <section>
         <a href="#logo" id="totop"><img src="top.png" alt="til toppen"></a>
     </section>
 
     <!-- Til top knap start -->
-    
-        <footer>
-            Copyright© 2019 Ahmad Azzam. All rights reserved.
-        </footer>
-    
-    
-        <!-- Funktionalitet for sticky menu start -->
-        <script>
-            window.onscroll = function () {
-                myFunction()
-            };
-    
-            var navbar = document.getElementById("navbar");
-            var sticky = navbar.offsetTop;
-    
-            function myFunction() {
-                if (window.pageYOffset >= sticky) {
-                    navbar.classList.add("sticky")
+
+    <footer>
+        Copyright© 2019 Ahmad Azzam. All rights reserved.
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Scripts -->
+    <!-- Scripts -->
+    <!-- Scripts -->
+    <!-- Scripts -->
+
+
+    <!-- Funktionalitet for collapsible start -->
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
                 } else {
-                    navbar.classList.remove("sticky");
+                    content.style.maxHeight = content.scrollHeight + "px";
                 }
+            });
+        }
+    </script>
+    <!-- Funktionalitet for collapsible slut -->
+
+
+    <!-- Funktionalitet af til top knap start -->
+    <script>
+        var mybutton = document.getElementById("totop");
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
             }
-        </script>
-        <!-- Funktionalitet for sticky menu slut -->
+        }
+    </script>
+    <!-- Funktionalitet af til top knap slut -->
+
+
 
 </body>
 

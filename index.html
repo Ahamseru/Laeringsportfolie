@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:800|Fugaz+One|Heebo&display=swap" rel="stylesheet">
+
     <title>Ahmad's Laeringsportfolie</title>
 </head>
 
@@ -20,48 +22,27 @@
 
             <ul>
                 <li class="dropdown"><a href="index.html">Forside</a>
-                    <section class="dropdown-content">
-                    </section>
+
                 </li>
 
                 <li class="dropdown"><a href="HTML_CSS_Layout.html">HTML CSS og Layout</a>
-                    <section class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </section>
+
                 </li>
 
                 <li class="dropdown"><a href="Design.html">Design</a>
-                    <section class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </section>
+
                 </li>
 
                 <li class="dropdown"><a href="Kommunikation.html">Kommunikation</a>
-                    <section class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </section>
+
                 </li>
 
                 <li class="dropdown"><a href="Portfolio.html">Om portfolioen</a>
-                    <section class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </section>
+
                 </li>
 
                 <li class="dropdown"><a href="Kilder.html">Kilder</a>
-                    <section class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </section>
+
                 </li>
 
             </ul>
@@ -75,7 +56,7 @@
     <h1>Ahmad's Læringsportfolie</h1>
 
     <!-- Grid start -->
-    <section class="container">
+    <section class="front-page-container">
 
         <!-- Billeder på forsiden start -->
 
@@ -106,32 +87,34 @@
     <section>
         <a href="#logo" id="totop"><img src="top.png" alt="til toppen"></a>
     </section>
-
     <!-- Til top knap start -->
-    
+
     <footer>
         Copyright© 2019 Ahmad Azzam. All rights reserved.
     </footer>
 
+    <!-- Scripts -->
+    <!-- Scripts -->
+    <!-- Scripts -->
+    <!-- Scripts -->
+    <!-- Scripts -->
 
-    <!-- Funktionalitet for sticky menu start -->
+    <!-- Funktionalitet af til top knap start -->
     <script>
+        var mybutton = document.getElementById("totop");
         window.onscroll = function () {
-            myFunction()
+            scrollFunction()
         };
 
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
+        function scrollFunction() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                mybutton.style.display = "block";
             } else {
-                navbar.classList.remove("sticky");
+                mybutton.style.display = "none";
             }
         }
     </script>
-    <!-- Funktionalitet for sticky menu slut -->
+    <!-- Funktionalitet af til top knap slut -->
 
 </body>
 
