@@ -53,7 +53,7 @@
 
 
 
-    
+
     <button type="button" class="collapsible">HTML, Editor og Kommentarer</button>
     <section class="content">
         <!-- HTML tekst start -->
@@ -64,9 +64,9 @@
             at mindst have noget HTML.
             For at kunne gøre brug af HTML til opbygge en hjemmeside, så skal man bruge en ”editor”.
         </p>
-           <!-- HTML tekst slut -->
+        <!-- HTML tekst slut -->
 
-          
+
         <h3>Editor</h3>
 
         <p>
@@ -141,7 +141,7 @@
 
     <button type="button" class="collapsible">Tags, Attributter, Elementer, Semantik, SEO</button>
     <section class="content">
-        <h2>Elementer</h2>
+        <h3>Elementer</h3>
         <p>
             For at kunne bygge en hjemmeside op på en ordentlig måde gennem HTML, så skal man gøre brug af ”tags”. Tags
             er med til at definere hvilket stykke kode er hvad, dvs. om det er f.eks. en paragraf, titel, undertitel,
@@ -149,72 +149,115 @@
             Man kan derfor også sige at en hjemmeside består af rigtig mange elementer
             Et eksempel på et element kunne se således ud:
             <br>
-            "<h1>Sikkerhed
-                <h1 />
-                <br>
-        </p>
+            <br>
+            < h1> Sikkerhed < /h1> </p> <h3>Tags</h3>
+                    <p>
+                        Tagget der er blevet brugt i dette eksempel, er et overskriftstag der hedder ”h1”. Tagget
+                        starter ved ”< h1>
+                            ", og har et slut tag ved
+                            < h1 />. Tags følger denne regel, lige meget hvilket slags tag der er tale om. I ovenstående
+                            eksempel
+                            betyder det at alt hvad der står imellem dette starttag, og sluttag, vil stå som en
+                            overskrift på
+                            hjemmesiden. I dette tilfælde vil vi få en overskrift hvor der står ”Sikkerhed”. Der findes
+                            flere
+                            overskriftstags og angives med ” < h2>, < h3>, < h4>
+                                        < h5>, og < h6>.
 
-    </section>
+                    </p>
 
-    <button type="button" class="collapsible">HTML</button>
-    <section class="content">
-        <p>Lorem ipsum...</p>
-    </section>
+                    <h3>Semantik og SEO</h3>
+                    <p>Semantik og SEO:
+                        Grunden til at de har forskellige numre er fordi det er med til at indikere størrelsen af
+                        overskriften på
+                        hjemmesiden. Derudover så er det også med til at skabe semantik på hjemmesiden. At noget er
+                        semantisk,
+                        betyder egentlig bare at noget har mening/betydning. Hvis et tag er semantisk, så fortæller det
+                        noget om
+                        dets indhold.
+                        Eksempel:
+                        < div>: fortæller ingenting om sit indhold.
+                            < table>: fortæller noget om sit indhold idet den markerer alt inden i til at være en
+                                ”tabel”, hvilket er
+                                også hvad navnet på tagget selv indikerer.
+                                Semantik, eller semantiske tags, er med til at give hjemmesiden struktur, og gør det
+                                nemmere for
+                                søgemaskiner, at finde hjemmesiden, også kendt som ”SEO”. SEO står for ”Search Engine
+                                Optimization”,
+                                og betyder i bund og grund at det er med til at gøre det nemmere, og mere relevant for
+                                søgemaskiner
+                                at finde lige præcis DIN hjemmeside først, over andre hjemmesider. Dette er selvfølgelig
+                                relevant
+                                for at give din hjemmeside mest mulige besøgere, og kliks.
+                                <br>
+                                <br>
+                                Følgende semantiske tags er gode at bruge, for at have sin hjemmeside SEO optimeret:                                                       
+                    </p>
 
-    <!-- Til top knap start -->
-    <section>
-        <a href="#logo" id="totop"><img src="top.png" alt="til toppen"></a>
-    </section>
-
-    <!-- Til top knap start -->
-
-    <footer>
-        Copyright© 2019 Ahmad Azzam. All rights reserved.
-    </footer>
-
-    <!-- Scripts -->
-    <!-- Scripts -->
-    <!-- Scripts -->
-    <!-- Scripts -->
-    <!-- Scripts -->
-
-
-    <!-- Funktionalitet for collapsible start -->
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.maxHeight) {
-                    content.style.maxHeight = null;
-                } else {
-                    content.style.maxHeight = content.scrollHeight + "px";
-                }
-            });
-        }
-    </script>
-    <!-- Funktionalitet for collapsible slut -->
+        
 
 
-    <!-- Funktionalitet af til top knap start -->
-    <script>
-        var mybutton = document.getElementById("totop");
-        window.onscroll = function () {
-            scrollFunction()
-        };
+                </>
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-    </script>
-    <!-- Funktionalitet af til top knap slut -->
+                <button type="button" class="collapsible">HTML</button>
+                <section class="content">
+                    <p>Lorem ipsum...</p>
+                </section>
+
+                <!-- Til top knap start -->
+                <section>
+                    <a href="#logo" id="totop"><img src="top.png" alt="til toppen"></a>
+                </section>
+
+                <!-- Til top knap start -->
+
+                <footer>
+                    Copyright© 2019 Ahmad Azzam. All rights reserved.
+                </footer>
+
+                <!-- Scripts -->
+                <!-- Scripts -->
+                <!-- Scripts -->
+                <!-- Scripts -->
+                <!-- Scripts -->
+
+
+                <!-- Funktionalitet for collapsible start -->
+                <script>
+                    var coll = document.getElementsByClassName("collapsible");
+                    var i;
+
+                    for (i = 0; i < coll.length; i++) {
+                        coll[i].addEventListener("click", function () {
+                            this.classList.toggle("active");
+                            var content = this.nextElementSibling;
+                            if (content.style.maxHeight) {
+                                content.style.maxHeight = null;
+                            } else {
+                                content.style.maxHeight = content.scrollHeight + "px";
+                            }
+                        });
+                    }
+                </script>
+                <!-- Funktionalitet for collapsible slut -->
+
+
+                <!-- Funktionalitet af til top knap start -->
+                <script>
+                    var mybutton = document.getElementById("totop");
+                    window.onscroll = function () {
+                        scrollFunction()
+                    };
+
+                    function scrollFunction() {
+                        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                            mybutton.style.display = "block";
+                        } else {
+                            mybutton.style.display = "none";
+                        }
+                    }
+                </script>
+                <!-- Funktionalitet af til top knap slut -->
 
 </body>
 
