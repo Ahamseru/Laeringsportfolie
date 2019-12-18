@@ -6,7 +6,7 @@ body {
     margin: 0;
     /* background-color: rgb(85, 83, 83); */
     background-color: #333;
-  
+
 }
 
 /* Styling af grid på forsiden start*/
@@ -55,17 +55,19 @@ img {
     margin: auto;
 
 }
+
 /* Stlyng a billeder i på forsiden slut */
 
 /* Styling af øverste logo start */
-.logo img{
+.logo img {
     max-width: 100px;
-   
+
 }
 
-header>section{
+header>section {
     background-color: #333;
 }
+
 /* Styling af logo slut */
 
 
@@ -85,20 +87,23 @@ h1 {
     margin: 2em 0 2em 0;
 }
 
-/* Styling af h3 start */
-h3 {
+/* Styling af headers start */
+h3, h4 {
     font-family: 'Dosis', sans-serif;
 
 }
 
 
-h3:not(:first-child) {
+h3:not(:first-child){
     margin-top: 3em;
 }
-/* Styling af h3 slut */
+
+
+
+/* Styling af headers slut */
 
 /* Syling af tekst start */
-p{
+p {
     border: 3px solid #f69c55;
     width: auto;
     padding: 20px;
@@ -108,16 +113,15 @@ p{
 
 }
 
-span{
-  display: block;
-  text-align: center;
+span {
+    display: block;
+    text-align: center;
 }
 
-#source-tekst{
+#source-tekst {
     font-style: italic;
     font-size: 0.8em;
 }
-
 /* Syling af tekst slut */
 
 /* Styling af baggrunden til menuen */
@@ -249,7 +253,7 @@ ul:not(#ul-tekst-style) {
 
 .active {
     background-color: rgb(194, 113, 59);
- 
+
 
 }
 
@@ -273,7 +277,7 @@ footer {
     clear: both;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    
+
 }
 
 /* Styling af footer slut */

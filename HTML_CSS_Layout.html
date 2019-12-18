@@ -357,7 +357,7 @@
 
 
             </li>
-            <hr>
+
 
         </ul>
         <!-- Semantik og SEO part 2 slut -->
@@ -381,31 +381,232 @@
 
     </section>
 
-    <button type="button" class="collapsible">Placeholder</button>
+    <button type="button" class="collapsible">Selectors (Simple, Combinator, Pseudo)</button>
     <section class="content">
-        <h3>Placeholder</h3>
-        <img src="Billeder/CSS banner.png" class="banner" alt="">
-        <p>
-            CSS står for ”Cascading Style Sheets”, og er det computersprog der bruges til at style alt HTML. Hvis HTML
-            er skelettet på hjemmesiden, så er CSS’en huden, øjnene, ørene, munden, hovedet, armene, benene osv.
-            Herudover så bestemmer den også farverne, formerne og placeringen af disse ”kropsdele” på hjemmesiden. CSS
-            er stylisten der har smag indenfor alt mode, makeup, tøjstil, og farver. Uden CSS så ville hjemmesiden se
-            meget kedelig og død ud. Det ville bare være sort tekst på en hvid baggrund, uden noget struktur, og det
-            ville køre i en lang række nedad, og slet ikke være ordentligt sat op. CSS er absolut nødvendigt, hvis ikke
-            for farver, former, og design, så i det mindste for at kunne få det til at fungere på forskellige
-            skærmstørrelser, eller sagt på en anden måde, ”mobile first.
+        <h3>Simple selectors</h3>
+        <ul>
+
+            ”Selector” er den første del i et stykke CSS-kode, og indikerer hvor i HTML’en der skal styles på.
+            Herefter
+            kommer ”property”, den indikerer hvad CSS’en skal style. Til sidst kommer ”value”, som egentlig bare er
+            en
+            værdi for property, og fortæller den hvor meget eller i hvilken grad HTML’en skal styles. Selve
+            selectoren
+            kan være flere forskellige ting. Den kan enten være et tag direkte fra HTML’en, eller et ID (ID’et
+            vælger
+            alle HTML elementer med samme ID, som i CSS’en, og angives med et ”#” før navnet på ID’et), eller en
+            klasse
+            (klassen vælger alle HTML elementer med samme klasse som i CSS’en og angives med et ”.” før klassenavnet
+            på
+            klassen).
             <br>
             <br>
-            ”Mobile first” er den tilgang man tager til en hjemmeside med henblik på at opbygge den til mobilen først.
-            Dette vil ikke kun gøre det nemmere at arbejde med tablet og desktopstørrelsen senere hen, men også
-            eliminerer problemer som kunne have opstået, skulle man have startet med desktopversionen først. Mobile
-            first er en tilgang med henblik på at gøre sin hjemmeside 100% mobil venlig først, før alt det andet.
-            Syntaks for CSS (regel for hvordan det skal skrives op, og i hvilken rækkefølge) ser sådan her ud:
-        </p>
-        <img src="Billeder/CSS syntaks.jpg" id="tekst-img" alt="billede">
+            <h4>Element selector eksempel:</h4>
+            <br>
+            <img src="Billeder/Element selector.png" id="tekst-img" alt="">
+            <span id="source-tekst">Her er elementet ”p” valgt i CSS’en, og vil nu derfor style alt der har tagget < p>
+                    i HTML’en. Dette
+                    stykke CSS vil centrere teksten og give den en rød farve.</span>
+            <hr>
+            <h4> ID selector eksempel:</h4>
+            <img src="Billeder/ID selector.png" id="tekst-img" alt="">
+            <span id="source-tekst">I dette eksempel vælges alle HTML elementer med ID’et ”para1”. Her vil de blive
+                stylet til a være
+                centreret og have en rød farve.</span>
+            <hr>
+            <h4> Class selector eksempel:</h4>
+            <img src="Billeder/Class selector.png" id="tekst-img" alt="">
+            <span id="source-tekst">Klasserne med navnet ”center” vil blive valgt i HTML’en, og vil blive centreret og
+                få en rød tekst på hjemmesiden.</span>
+
+            <hr>
+            <h4>Grouping selector eksempel:</h4>
+            <img src="Billeder/Grouping selector.png" id="tekst-img" alt="">
+            <span id="source-tekst">Udover ovenstående så kan man også gøre brug af grouping selectors. Her kan man
+                vælger flere elementer samtidigt, og style dem alle sammen på samme måde, uden at skulle have til at
+                skrive mange linjer kode i CSS.</span>
+
+
+        </ul>
+
+        <h3>Combinator selectors:</h3>
+        <ul>
+            Herudover er der også ”combinator selectors” som vælger mere en bare én ting fra HTML’en, dette kunne være
+            flere forskellige elementer, eller elementer der er ”child” af et andet element (hvilket vil sige at et
+            element er et nedarvet element af et andet.) En ”combinator” er noget som beksriver forholdet mellem to
+            selectors. Man kan derfor nemmere spotte i CSS’en hvilket element der er valgt, og i forhold til hvad.
+            <br>
+            <br>
+            <h4>Decendant selector eksempel:</h4>
+            <img src="Billeder/Descendant selectors.png" id="tekst-img" alt="">
+            <span id="source-tekst">Vælger alle < p> tags, som ligger inde i < div> tags og giver dem en gul
+                        baggrund.</span>
+            <hr>
+            <h4>Child selector eksempel:</h4>
+            <img src="Billeder/Grouping selector.png" id="tekst-img" alt="">
+            <span id="source-tekst">Denne selector vælger alle < p> tags som er ”child” af < div> tags i HTML’en, og
+                        giver
+                        dem en gul baggrund. Dvs. at de < p> tags som bliver valgt, skal ligge inde i < div> tags i
+                                HTML’en.</span>
+            <hr>
+            <h4>Adjacent selector eksempel:</h4>
+            <img src="Billeder/Adjacent selector.png" id="tekst-img" alt="">
+            <span id="source-tekst">Denne type selector vælger det første < p> element i HTML’en som kommer lige efter
+                    < div> tagget. Alle andre < p> tags som kommer herefter blive ignoreret.</span>
+            <hr>
+            <h4>General sibling selector eksempel:</h4>
+            <img src="Billeder/General sibling selector.png" id="tekst-img" alt="">
+            <span id="source-tekst">General sibling selectoren vælger i dette eksempel alle < p > tags som er søskende til
+                    < div > tags. Dvs. at her vil alle < p > tags som kommer efter < div > tags blive valgt.</span>
+        </ul>
 
     </section>
 
+    <button type="button" class="collapsible">Kaskaderegler, Box model, Farver, Skrifttyper</button>
+    <section class="content">
+        <h3>Kaskaderegler</h3>
+        <ul>
+
+            ”Selector” er den første del i et stykke CSS-kode, og indikerer hvor i HTML’en der skal styles på.
+            Herefter
+            kommer ”property”, den indikerer hvad CSS’en skal style. Til sidst kommer ”value”, som egentlig bare er
+            en
+            værdi for property, og fortæller den hvor meget eller i hvilken grad HTML’en skal styles. Selve
+            selectoren
+            kan være flere forskellige ting. Den kan enten være et tag direkte fra HTML’en, eller et ID (ID’et
+            vælger
+            alle HTML elementer med samme ID, som i CSS’en, og angives med et ”#” før navnet på ID’et), eller en
+            klasse
+            (klassen vælger alle HTML elementer med samme klasse som i CSS’en og angives med et ”.” før klassenavnet
+            på
+            klassen).
+            <br>
+            <br>
+            <h4>Element selector eksempel:</h4>
+            <br>
+            <img src="Billeder/Element selector.png" id="tekst-img" alt="">
+            <span id="source-tekst">Her er elementet ”p” valgt i CSS’en, og vil nu derfor style alt der har tagget < p>
+                    i HTML’en. Dette
+                    stykke CSS vil centrere teksten og give den en rød farve.</span>
+            <hr>
+            <h4> ID selector eksempel:</h4>
+            <img src="Billeder/ID selector.png" id="tekst-img" alt="">
+            <span id="source-tekst">I dette eksempel vælges alle HTML elementer med ID’et ”para1”. Her vil de blive
+                stylet til a være
+                centreret og have en rød farve.</span>
+            <hr>
+            <h4> Class selector eksempel:</h4>
+            <img src="Billeder/Class selector.png" id="tekst-img" alt="">
+            <span id="source-tekst">Klasserne med navnet ”center” vil blive valgt i HTML’en, og vil blive centreret og
+                få en rød tekst på hjemmesiden.</span>
+
+            <hr>
+            <h4>Grouping selector eksempel:</h4>
+            <img src="Billeder/Grouping selector.png" id="tekst-img" alt="">
+            <span id="source-tekst">Udover ovenstående så kan man også gøre brug af grouping selectors. Her kan man
+                vælger flere elementer samtidigt, og style dem alle sammen på samme måde, uden at skulle have til at
+                skrive mange linjer kode i CSS.</span>
+
+
+        </ul>
+
+        <h3>Box model</h3>
+        <ul>
+            Herudover er der også ”combinator selectors” som vælger mere en bare én ting fra HTML’en, dette kunne være
+            flere forskellige elementer, eller elementer der er ”child” af et andet element (hvilket vil sige at et
+            element er et nedarvet element af et andet.) En ”combinator” er noget som beksriver forholdet mellem to
+            selectors. Man kan derfor nemmere spotte i CSS’en hvilket element der er valgt, og i forhold til hvad.
+            <br>
+            <br>
+            <h4>Decendant selector eksempel:</h4>
+            <img src="Billeder/Descendant selectors.png" id="tekst-img" alt="">
+            <span id="source-tekst">Vælger alle < p> tags, som ligger inde i < div> tags og giver dem en gul
+                        baggrund.</span>
+            <hr>
+            <h4>Child selector eksempel:</h4>
+            <img src="Billeder/Grouping selector.png" id="tekst-img" alt="">
+            <span id="source-tekst">Denne selector vælger alle < p> tags som er ”child” af < div> tags i HTML’en, og
+                        giver
+                        dem en gul baggrund. Dvs. at de < p> tags som bliver valgt, skal ligge inde i < div> tags i
+                                HTML’en.</span>
+            <hr>
+            <h4>Adjacent selector eksempel:</h4>
+            <img src="Billeder/Adjacent selector.png" id="tekst-img" alt="">
+            <span id="source-tekst">Denne type selector vælger det første < p> element i HTML’en som kommer lige efter
+                    < div> tagget. Alle andre < p> tags som kommer herefter blive ignoreret.</span>
+            <hr>
+            <h4>General sibling selector eksempel:</h4>
+            <img src="Billeder/General sibling selector.png" id="tekst-img" alt="">
+            <span id="source-tekst">General sibling selectoren vælger i dette eksempel alle < p > tags som er søskende til
+                    < div > tags. Dvs. at her vil alle < p > tags som kommer efter < div > tags blive valgt.</span>
+        </ul>
+
+        <h3>Farver</h3>
+        <ul>
+            Herudover er der også ”combinator selectors” som vælger mere en bare én ting fra HTML’en, dette kunne være
+            flere forskellige elementer, eller elementer der er ”child” af et andet element (hvilket vil sige at et
+            element er et nedarvet element af et andet.) En ”combinator” er noget som beksriver forholdet mellem to
+            selectors. Man kan derfor nemmere spotte i CSS’en hvilket element der er valgt, og i forhold til hvad.
+            <br>
+            <br>
+            <h4>Decendant selector eksempel:</h4>
+            <img src="Billeder/Descendant selectors.png" id="tekst-img" alt="">
+            <span id="source-tekst">Vælger alle < p> tags, som ligger inde i < div> tags og giver dem en gul
+                        baggrund.</span>
+            <hr>
+            <h4>Child selector eksempel:</h4>
+            <img src="Billeder/Grouping selector.png" id="tekst-img" alt="">
+            <span id="source-tekst">Denne selector vælger alle < p> tags som er ”child” af < div> tags i HTML’en, og
+                        giver
+                        dem en gul baggrund. Dvs. at de < p> tags som bliver valgt, skal ligge inde i < div> tags i
+                                HTML’en.</span>
+            <hr>
+            <h4>Adjacent selector eksempel:</h4>
+            <img src="Billeder/Adjacent selector.png" id="tekst-img" alt="">
+            <span id="source-tekst">Denne type selector vælger det første < p> element i HTML’en som kommer lige efter
+                    < div> tagget. Alle andre < p> tags som kommer herefter blive ignoreret.</span>
+            <hr>
+            <h4>General sibling selector eksempel:</h4>
+            <img src="Billeder/General sibling selector.png" id="tekst-img" alt="">
+            <span id="source-tekst">General sibling selectoren vælger i dette eksempel alle < p > tags som er søskende til
+                    < div > tags. Dvs. at her vil alle < p > tags som kommer efter < div > tags blive valgt.</span>
+        </ul>
+
+        <h3>Skrifttyper</h3>
+        <ul>
+            Herudover er der også ”combinator selectors” som vælger mere en bare én ting fra HTML’en, dette kunne være
+            flere forskellige elementer, eller elementer der er ”child” af et andet element (hvilket vil sige at et
+            element er et nedarvet element af et andet.) En ”combinator” er noget som beksriver forholdet mellem to
+            selectors. Man kan derfor nemmere spotte i CSS’en hvilket element der er valgt, og i forhold til hvad.
+            <br>
+            <br>
+            <h4>Decendant selector eksempel:</h4>
+            <img src="Billeder/Descendant selectors.png" id="tekst-img" alt="">
+            <span id="source-tekst">Vælger alle < p> tags, som ligger inde i < div> tags og giver dem en gul
+                        baggrund.</span>
+            <hr>
+            <h4>Child selector eksempel:</h4>
+            <img src="Billeder/Grouping selector.png" id="tekst-img" alt="">
+            <span id="source-tekst">Denne selector vælger alle < p> tags som er ”child” af < div> tags i HTML’en, og
+                        giver
+                        dem en gul baggrund. Dvs. at de < p> tags som bliver valgt, skal ligge inde i < div> tags i
+                                HTML’en.</span>
+            <hr>
+            <h4>Adjacent selector eksempel:</h4>
+            <img src="Billeder/Adjacent selector.png" id="tekst-img" alt="">
+            <span id="source-tekst">Denne type selector vælger det første < p> element i HTML’en som kommer lige efter
+                    < div> tagget. Alle andre < p> tags som kommer herefter blive ignoreret.</span>
+            <hr>
+            <h4>General sibling selector eksempel:</h4>
+            <img src="Billeder/General sibling selector.png" id="tekst-img" alt="">
+            <span id="source-tekst">General sibling selectoren vælger i dette eksempel alle < p > tags som er søskende til
+                    < div > tags. Dvs. at her vil alle < p > tags som kommer efter < div > tags blive valgt.</span>
+        </ul>
+
+    </section>
+
+
+    
 
 
 

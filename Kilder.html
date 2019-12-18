@@ -12,8 +12,10 @@
 
 <body>
     <header>
-       
 
+        <section class="logo">
+            <a href="index.html" id="logo"><img src="logo.png" alt="logo"></a>
+        </section>
 
         <!-- Navigationsbar start -->
         <nav id="navbar">
@@ -52,9 +54,65 @@
 
 
     </header>
+    <!-- Kilder start -->
+    <h1>Kilder (Links PDF, og Citater)</h1>
+    <button type="button" class="collapsible">Links</button>
+    <section class="content">
+        <h3>Links kilder</h3>
+        <ul id="ul-tekst-style">
 
-    <h1>Kilder</h1>
+            <b>
 
+                <li id="li-tekst-style">https://da.wikipedia.org/wiki/HTML</li>
+                <li id="li-tekst-style">https://da.wikipedia.org/wiki/CSS</li>
+                <li id="li-tekst-style">https://www.w3schools.com/</li>
+                <li id="li-tekst-style">https://www.netkablet.dk/internettet-skrfter-mobile-first-design/</li>
+                <li id="li-tekst-style">https://en.wikipedia.org/wiki/Version_control</li>
+                <li id="li-tekst-style">https://da.wikipedia.org/wiki/HTML</li>
+                <li id="li-tekst-style">https://da.wikipedia.org/wiki/CSS</li>
+                <li id="li-tekst-style">https://www.w3schools.com/</li>
+                <li id="li-tekst-style">https://www.netkablet.dk/internettet-skrfter-mobile-first-design/</li>
+                <li id="li-tekst-style">https://en.wikipedia.org/wiki/Version_control</li>
+                <li id="li-tekst-style">< Img> element - https://cdo-curriculum.s3.amazonaws.com/media/uploads/img_tag.png</li>
+                <li id="li-tekst-style">RGB calculator - https://www.w3schools.com/colors/colors_rgb.asp</li>
+                <li id="li-tekst-style">HEX-kode - https://www.w3schools.com/colors/colors_hexadecimal.asp</li>
+                <li id="li-tekst-style">HSL-calculator https://www.w3schools.com/colors/colors_hsl.asp</li>
+                <li id="li-tekst-style">HTML logo - https://cdn.pixabay.com/photo/2017/03/30/13/33/html-2188441_960_720.png</li>
+
+
+            </b>
+
+        </ul>
+
+        <!-- Kilder slut -->
+
+    </section>
+
+
+    <button type="button" class="collapsible">PDF</button>
+    <section class="content">
+        <h3>PDF kilder generelt</h3>
+        <ul id="ul-tekst-style">
+
+            <b>
+
+                
+
+            </b>
+        </ul>
+
+        <h3>PDF kilder med sidetal</h3>
+
+        <ul id="ul-tekst-style">
+
+            <b>
+
+               
+            </b>
+        </ul>
+
+
+    </section>
     <!-- Til top knap start -->
     <section>
         <a href="#logo" id="totop"><img src="top.png" alt="til toppen"></a>
@@ -72,7 +130,42 @@
     <!-- Scripts -->
     <!-- Scripts -->
 
+    <!-- Funktionalitet for collapsible start -->
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
 
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+    <!-- Funktionalitet for collapsible slut -->
+
+
+    <!-- Funktionalitet af til top knap start -->
+    <script>
+        var mybutton = document.getElementById("totop");
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+    </script>
+    <!-- Funktionalitet af til top knap slut -->
 
 
     <!-- Funktionalitet til sticky menu start -->
