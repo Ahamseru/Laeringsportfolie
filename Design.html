@@ -16,31 +16,32 @@
             <a href="index.html"><img src="logo.png" alt="logo"></a>
         </section>
 
+
         <!-- Navigationsbar start -->
         <nav id="navbar">
 
             <ul>
-                <li class="dropdown"><a href="index.html">Forside</a>
+                <li id="menu-list" class="dropdown"><a href="index.html">Forside</a>
 
                 </li>
 
-                <li class="dropdown"><a href="HTML_CSS_Layout.html">HTML CSS og Layout</a>
+                <li id="menu-list" class="dropdown"><a href="HTML_CSS_Layout.html">HTML CSS og Layout</a>
 
                 </li>
 
-                <li class="dropdown"><a href="Design.html">Design</a>
+                <li id="menu-list" class="dropdown"><a href="Design.html">Design</a>
 
                 </li>
 
-                <li class="dropdown"><a href="Kommunikation.html">Kommunikation</a>
+                <li id="menu-list" class="dropdown"><a href="Kommunikation.html">Kommunikation</a>
 
                 </li>
 
-                <li class="dropdown"><a href="Portfolio.html">Om portfolioen</a>
+                <li id="menu-list" class="dropdown"><a href="Portfolio.html">Om portfolioen</a>
 
                 </li>
 
-                <li class="dropdown"><a href="Kilder.html">Kilder</a>
+                <li id="menu-list" class="dropdown"><a href="Kilder.html">Kilder</a>
 
                 </li>
 
@@ -125,22 +126,26 @@
     </script>
     <!-- Funktionalitet for collapsible slut -->
 
-    <!-- Funktionalitet af til top knap start -->
+
+
+    <!-- Funktionalitet til sticky menu start -->
     <script>
-        var mybutton = document.getElementById("totop");
         window.onscroll = function () {
-            scrollFunction()
+            myFunction()
         };
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                mybutton.style.display = "block";
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
             } else {
-                mybutton.style.display = "none";
+                navbar.classList.remove("sticky");
             }
         }
     </script>
-    <!-- Funktionalitet af til top knap slut -->
+    <!-- Funktionalitet til sticky menu slut -->
 
 </body>
 

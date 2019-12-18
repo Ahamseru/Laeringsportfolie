@@ -380,7 +380,7 @@
         };
 
         function scrollFunction() {
-            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 mybutton.style.display = "block";
             } else {
                 mybutton.style.display = "none";
@@ -389,6 +389,22 @@
     </script>
     <!-- Funktionalitet af til top knap slut -->
 
+    <!-- Funktionalitet til sticky menu start -->
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
+    <!-- Funktionalitet til sticky menu slut -->
 </body>
 
 </html>

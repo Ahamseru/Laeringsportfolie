@@ -129,6 +129,18 @@ li a,
     font-family: 'Fugaz One', cursive;
 }
 
+/* Styling af menu text knapper start*/
+a:active {
+    background-color: rgb(128, 80, 49);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+
 /* Styling af lists i teksten start */
 section>ul {
     background-color: white;
@@ -169,11 +181,6 @@ ul:not(#ul-tekst-style){
 
 /* Styling af lists i teksten slut */
 
-
-/* Viser undermenuen når man holder musen over dem */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 
 /* Styling af til top knap start */
 #totop {
@@ -227,10 +234,6 @@ ul:not(#ul-tekst-style){
 
 
 
-/* Styling af menu text knapper start*/
-a:active {
-    background-color: rgb(128, 80, 49);
-}
 
 
 
