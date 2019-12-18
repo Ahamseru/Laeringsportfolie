@@ -15,10 +15,12 @@
             <a href="index.html" id="logo"><img src="logo.png" alt="logo"></a>
         </section>
 
+
         <!-- Navigationsbar start -->
         <nav id="navbar">
 
             <ul>
+
                 <li id="menu-list" class="dropdown"><a href="index.html">Forside</a>
 
                 </li>
@@ -53,10 +55,10 @@
 
 
 
-
+    <!-- HTML, Editor og Kommentarer start -->
     <button type="button" class="collapsible">HTML, Editor og Kommentarer</button>
     <section class="content">
-        <!-- HTML tekst start -->
+
         <h3>HTML</h3>
         <img src="Billeder/HTML banner.png" class="banner" alt="">
         <p>HTML står for ”Hyper Text Markup Language”, og bruges til at opbygge skelettet af en hjemmeside. Dvs. at dets
@@ -64,7 +66,7 @@
             at mindst have noget HTML.
             For at kunne gøre brug af HTML til opbygge en hjemmeside, så skal man bruge en ”editor”.
         </p>
-        <!-- HTML tekst slut -->
+
 
 
         <h3>Editor</h3>
@@ -110,6 +112,7 @@
 
         </p>
     </section>
+    <!-- HTML, Editor og Kommentarer start -->
 
     <!-- CSS tekst start -->
     <button type="button" class="collapsible">CSS</button>
@@ -133,14 +136,52 @@
             first er en tilgang med henblik på at gøre sin hjemmeside 100% mobil venlig først, før alt det andet.
             Syntaks for CSS (regel for hvordan det skal skrives op, og i hvilken rækkefølge) ser sådan her ud:
         </p>
-        <img src="Billeder/CSS syntaks.jpg" alt="billede">
+        <img src="Billeder/CSS syntaks.jpg" id="tekst-img" alt="billede">
 
     </section>
     <!-- CSS tekst slut -->
 
-    <!-- Elementer tekst start -->
-    <button type="button" class="collapsible">Tags, Attributter, Elementer, Semantik, SEO</button>
+    <!-- Tags, Attributter, Elementer, Semantik, SEO start -->
+    <button type="button" class="collapsible">Tags, Attributter, Elementer, Semantik og SEO</button>
     <section class="content">
+        <!-- Tags start -->
+        <h3>Tags</h3>
+        <p>
+            Tagget der er blevet brugt i ovenstående eksempel, er et overskriftstag der hedder < h1>.
+                Tagget
+                starter ved < h1>
+                    ", og har et slut tag ved
+                    < /h1>. Tags følger denne regel, lige meget hvilket slags tag der er tale om. I ovenstående eksempel
+                        betyder det at alt hvad der står imellem dette starttag, og sluttag, vil stå som en overskrift
+                        på hjemmesiden. I dette tilfælde vil vi få en overskrift hvor der står ”Sikkerhed”. Der findes
+                        flere overskriftstags og angives med < h2>, < h3>, < h4>, < h5>, og < h6>.
+
+        </p>
+        <!-- Tags slut -->
+        <!-- Attributter start -->
+        <h3>Attributter</h3>
+        <p>
+            <img src="Billeder/Attributter.png" id="tekst-img" alt="">
+            <br>
+            <br>
+            Attributter giver HTML elementer noget at relatere til. Dvs. at man nu kan nemmere, mere
+            specifikt pege på hvilket element det er man snakker om. Man kan give et element en attribut
+            som kunne eksempelvis være et ID, eller en klasse. En attribut består af to dele, et
+            attributnavn, og en attributværdi. Navnet indikerer hvilken slags attribut der er tale om,
+            mens værdien af attributten bruges til at pege på selve elementet med den specificerede
+            værdi.
+            <br>
+            <br>
+            Eksempel:
+            <br>
+            <br>
+            <img src="Billeder/Attribut eksemepl.png" id="tekst-img" alt="">
+            <br>
+            <span id="source-tekst"> Her er attributnavnet <b>”style”</b> og attributværdien
+                <b>"color:red"</b>.</span>
+        </p>
+        <!-- Attributter slut -->
+        <!-- Elementer start -->
         <h3>Elementer</h3>
         <p>
             For at kunne bygge en hjemmeside op på en ordentlig måde gennem HTML, så skal man gøre brug af ”tags”. Tags
@@ -148,25 +189,15 @@
             artikel, billeder mm. Vi refererer til et stykke kode som har et start, og et slut tag, som et ”element”.
             Man kan derfor også sige at en hjemmeside består af rigtig mange elementer
             Et eksempel på et element kunne se således ud:
+
             <br>
             <br>
-            < h1> Sikkerhed < h1>
-        </p>
-        <h3>Tags</h3>
-        <p>
-            Tagget der er blevet brugt i dette eksempel, er et overskriftstag der hedder ”h1”. Tagget
-            starter ved "h1"
-            ", og har et slut tag ved
-            "h1". Tags følger denne regel, lige meget hvilket slags tag der er tale om. I ovenstående
-            eksempel
-            betyder det at alt hvad der står imellem dette starttag, og sluttag, vil stå som en
-            overskrift på
-            hjemmesiden. I dette tilfælde vil vi få en overskrift hvor der står ”Sikkerhed”. Der findes
-            flere
-            overskriftstags og angives med < h2>, < h3>, < h4>, < h5>, og < h6>.
 
+            <span>
+                < h1> Sikkerhed < /h1> </span> <!-- Elementer slut -->
         </p>
 
+        <!-- Semantik og SEO part 1 start -->
         <h3>Semantik og SEO</h3>
         <ul>
             Semantik og SEO:
@@ -174,156 +205,205 @@
             overskriften på
             hjemmesiden. Derudover så er det også med til at skabe semantik på hjemmesiden. At noget er
             semantisk,
-            betyder egentlig bare at noget har mening/betydning. Hvis et tag er semantisk, så fortæller det
+            betyder egentlig bare at noget har mening/betydning. Hvis et tag er semantisk, så fortæller
+            det
             noget om
             dets indhold.
             <br>
             <br>
             Eksempel:
-            
+
             <br>
             <br>
-            
-                <li>
-                    <b>
-                        < div > :
-                    </b> fortæller ingenting om sit indhold.
-                </li>
-                
-                <li>
-                    <b>
-                        < table > :
-                    </b> fortæller noget om sit indhold idet den markerer alt inden i til at være en
-                    ”tabel”, hvilket er
-                    også hvad navnet på tagget selv indikerer.
-                </li>
-                <br>
-                <br>
-                 Semantik, eller semantiske tags, er med til at give hjemmesiden struktur, og gør det
-                 nemmere for
-                 søgemaskiner, at finde hjemmesiden, også kendt som ”SEO”. SEO står for ”Search Engine
-                 Optimization”,
-                 og betyder i bund og grund at det er med til at gøre det nemmere, og mere relevant for
-                 søgemaskiner
-                 at finde lige præcis DIN hjemmeside først, over andre hjemmesider. Dette er selvfølgelig
-                 relevant
-                 for at give din hjemmeside mest mulige besøgere, og kliks.
-            </ul>
-            
+
+            <li>
+                <b>
+                    < div> :
+                </b> fortæller ingenting om sit indhold.
+            </li>
+
+            <li>
+                <b>
+                    < table> :
+                </b> fortæller noget om sit indhold idet den markerer alt inden i til at være en
+                ”tabel”, hvilket er
+                også hvad navnet på tagget selv indikerer.
+            </li>
             <br>
             <br>
-            <!-- Elementer tekst start -->
+            Semantik, eller semantiske tags, er med til at give hjemmesiden struktur, og gør det
+            nemmere for
+            søgemaskiner, at finde hjemmesiden, også kendt som ”SEO”. SEO står for ”Search Engine
+            Optimization”,
+            og betyder i bund og grund at det er med til at gøre det nemmere, og mere relevant for
+            søgemaskiner
+            at finde lige præcis DIN hjemmeside først, over andre hjemmesider. Dette er selvfølgelig
+            relevant
+            for at give din hjemmeside mest mulige besøgere, og kliks.
+        </ul>
 
-            <!-- Semantik part 2  start-->
-            <h3>Semantik og SEO (part 2)</h3>
-            <ul>
-                Følgende semantiske tags er gode at bruge, for at have sin hjemmeside SEO optimeret:
-                <br>
-                <br>
-                <li>
-                    <b>
-                        < section> :
-                    </b> Inddeler koden i sektioner, og giver mere overblik over de
-                    forskellige afsnit i
-                    HTML’en
-                </li>
+        <br>
+        <br>
 
-                <li>
-                    <b>
-                        < header> :
-                    </b> Bruges til at indikere ”hovedet” på hjemmesiden, og er det der ligger
-                    øverst
-                    på siden.
-                </li>
+        <!-- Semantik og SEO part 1 slut -->
 
-                <li>
-                    <b>
-                        < footer> :
-                    </b> En footer bruges til at indikere det nederste på hjemmesiden eller
-                    ”fødderne”
-                    på den. Det står altid i bunden af en hjemmeside.
-                </li>
+        <!-- Semantik og SEO part 2 start -->
+        <h3>Semantik og SEO (part 2)</h3>
+        <ul>
+            Følgende semantiske tags er gode at bruge, for at have sin hjemmeside SEO optimeret:
+            <br>
+            <br>
+            <li>
+                <b>
+                    < section> :
+                </b> Inddeler koden i sektioner, og giver mere overblik over de
+                forskellige afsnit i
+                HTML’en
+            </li>
 
-                <li>
-                    <b>
-                        < form> :
-                    </b> Forms bliver brugt til at modtage bruger input, i form af små
-                    tekstbokse, hvori
-                    brugeren kan bl.a. skrive sit navn/adresse/alder, eller noget helt andet.
-                </li>
-                <hr>
-                <br>
-                Her er også nogle eksempler på andre tags som også bliver brugt, men som ikke er semantiske:
-                <li>
-                    <b>
-                        < p> :
-                    </b> Er en paragraf, og er stort set bare en linje tekst, der ignorerer linjeskift og
-                    mellemrum i koden.
-                </li>
-                <li>
-                    <b>
-                        < div> :
-                    </b> Bruges som regel til at indikere en sektion i koden som ikke nødvendigvis er nødt til
-                    at være semantisk, opfører sig mere eller mindre som < p> tagget.
-                </li>
-                <li>
-                    <b>
-                        < form> :
-                    </b> Ligner meget < div> tagget, men forskellen ligger i at den bruges til at lænke
-                        eksempelvis billede og tekst sammen, således at de står på samme linje. Derudover så er
-                        span tagget et inline element, mens div er et block element.
-                </li>
-                <li>
-                    <b>
-                        < img> :
-                    </b> Bruges til at indsætte et billede ind på hjemmesiden. Filen udpeges med en ”src”
-                    attribut, og man skriver stien til billedet mellem de to anførelsestegn.
-                </li>
+            <li>
+                <b>
+                    < header> :
+                </b> Bruges til at indikere ”hovedet” på hjemmesiden, og er det der ligger
+                øverst
+                på siden.
+            </li>
 
-                <img src="Billeder/img element.png" id="imgelement" alt="">
-                <hr>
-                <li id="nested-list">
-                    <b>
-                        < li> (herunder også < ol> og < ul>):
-                    </b>
-                    Bruges til at lave lister på hjemmesiden. < ol> bliver brugt til at lave en ”ordered list” hvilket
-                        vil sige en liste med nummering på, den kunne f.eks. se sådan her ud:
-                        <ol id="ol-tekst-style">
+            <li>
+                <b>
+                    < footer> :
+                </b> En footer bruges til at indikere det nederste på hjemmesiden eller
+                ”fødderne”
+                på den. Det står altid i bunden af en hjemmeside.
+            </li>
 
-                            <b>
+            <li>
+                <b>
+                    < form> :
+                </b> Forms bliver brugt til at modtage bruger input, i form af små
+                tekstbokse, hvori
+                brugeren kan bl.a. skrive sit navn/adresse/alder, eller noget helt andet.
+            </li>
+            <hr>
+            <br>
+            Her er også nogle eksempler på andre tags som også bliver brugt, men som ikke er semantiske:
+            <li>
+                <b>
+                    < p> :
+                </b> Er en paragraf, og er stort set bare en linje tekst, der ignorerer linjeskift og
+                mellemrum i koden.
+            </li>
+            <li>
+                <b>
+                    < div> :
+                </b> Bruges som regel til at indikere en sektion i koden som ikke nødvendigvis er nødt
+                til
+                at være semantisk, opfører sig mere eller mindre som < p> tagget.
+            </li>
+            <li>
+                <b>
+                    < form> :
+                </b> Ligner meget < div> tagget, men forskellen ligger i at den bruges til at lænke
+                    eksempelvis billede og tekst sammen, således at de står på samme linje. Derudover så
+                    er
+                    span tagget et inline element, mens div er et block element.
+            </li>
+            <li>
+                <b>
+                    < img> :
+                </b> Bruges til at indsætte et billede ind på hjemmesiden. Filen udpeges med en ”src”
+                attribut, og man skriver stien til billedet mellem de to anførelsestegn.
+            </li>
 
-                                <li id="li-tekst-style">Item</li>
-                                <li id="li-tekst-style">Item</li>
-                                <li id="li-tekst-style">Item</li>
-                                <li id="li-tekst-style">Item</li>
+            <img src="Billeder/img element.png" id="tekst-img" alt="">
+            <hr>
+            <li id="nested-list">
+                <b>
+                    < li> (herunder også < ol> og < ul>):
+                </b>
+                Bruges til at lave lister på hjemmesiden. < ol> bliver brugt til at lave en ”ordered
+                    list” hvilket
+                    vil sige en liste med nummering på, den kunne f.eks. se sådan her ud:
+                    <ol id="ol-tekst-style">
 
-                            </b>
-                        </ol>
-                </li>
-                <hr>
-                <li id="nested-list">
-                    En liste uden nummering bruger < ul> i stedet, som står for ”unordered list”, og kunne se sådan her
-                        ud: 
+                        <b>
 
-                            <ul id="ul-tekst-style">
+                            <li id="li-tekst-style">Item</li>
+                            <li id="li-tekst-style">Item</li>
+                            <li id="li-tekst-style">Item</li>
+                            <li id="li-tekst-style">Item</li>
 
-                                <b>
+                        </b>
+                    </ol>
+            </li>
+            <hr>
+            <li id="nested-list">
+                En liste uden nummering bruger < ul> i stedet, som står for ”unordered list”, og kunne
+                    se sådan her
+                    ud:
 
-                                    <li id="li-tekst-style">Item</li>
-                                    <li id="li-tekst-style">Item</li>
-                                    <li id="li-tekst-style">Item</li>
-                                    <li id="li-tekst-style">Item</li>
+                    <ul id="ul-tekst-style">
 
-                                </b>
+                        <b>
 
-                            </ul>
+                            <li id="li-tekst-style">Item</li>
+                            <li id="li-tekst-style">Item</li>
+                            <li id="li-tekst-style">Item</li>
+                            <li id="li-tekst-style">Item</li>
 
-                        
-                </li>
-                <hr>
+                        </b>
 
-            </ul>
-            <!-- Semantik part 2  start-->
+                    </ul>
+
+
+            </li>
+            <hr>
+
+        </ul>
+        <!-- Semantik og SEO part 2 slut -->
+
+
+        <!-- Tags, Attributter, Elementer, Semantik, SEO slut -->
+
+        <!-- Links start -->
+        <h3>Links</h3>
+        <p>
+            Links i HTML koden fungere på den måde at man skriver hvad der skal være klikbart imellem to
+            < a> tags, det kunne f.eks. se sådan her ud:
+                <img src="Billeder/Links.jpg" id="tekst-img" alt="">
+                Her er “< a>” tagget starten og ”< /a>” slutningen af elementet. Den røde tekst, er den hjemmeside som
+                        man bliver taget til når man klikker på linket, mens den grønne tekst er linkets navn (det man
+                        faktisk ser på hjemmesiden som blå highlighted tekst og som man kan klikke på). </p> <br>
+                        <br>
+
+
+                        <!-- Links slut -->
+
+    </section>
+
+    <button type="button" class="collapsible">Placeholder</button>
+    <section class="content">
+        <h3>Placeholder</h3>
+        <img src="Billeder/CSS banner.png" class="banner" alt="">
+        <p>
+            CSS står for ”Cascading Style Sheets”, og er det computersprog der bruges til at style alt HTML. Hvis HTML
+            er skelettet på hjemmesiden, så er CSS’en huden, øjnene, ørene, munden, hovedet, armene, benene osv.
+            Herudover så bestemmer den også farverne, formerne og placeringen af disse ”kropsdele” på hjemmesiden. CSS
+            er stylisten der har smag indenfor alt mode, makeup, tøjstil, og farver. Uden CSS så ville hjemmesiden se
+            meget kedelig og død ud. Det ville bare være sort tekst på en hvid baggrund, uden noget struktur, og det
+            ville køre i en lang række nedad, og slet ikke være ordentligt sat op. CSS er absolut nødvendigt, hvis ikke
+            for farver, former, og design, så i det mindste for at kunne få det til at fungere på forskellige
+            skærmstørrelser, eller sagt på en anden måde, ”mobile first.
+            <br>
+            <br>
+            ”Mobile first” er den tilgang man tager til en hjemmeside med henblik på at opbygge den til mobilen først.
+            Dette vil ikke kun gøre det nemmere at arbejde med tablet og desktopstørrelsen senere hen, men også
+            eliminerer problemer som kunne have opstået, skulle man have startet med desktopversionen først. Mobile
+            first er en tilgang med henblik på at gøre sin hjemmeside 100% mobil venlig først, før alt det andet.
+            Syntaks for CSS (regel for hvordan det skal skrives op, og i hvilken rækkefølge) ser sådan her ud:
+        </p>
+        <img src="Billeder/CSS syntaks.jpg" id="tekst-img" alt="billede">
+
     </section>
 
 
@@ -391,19 +471,21 @@
 
     <!-- Funktionalitet til sticky menu start -->
     <script>
-        window.onscroll = function() {myFunction()};
-        
+        window.onscroll = function () {
+            myFunction()
+        };
+
         var navbar = document.getElementById("navbar");
         var sticky = navbar.offsetTop;
-        
+
         function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
         }
-        </script>
+    </script>
     <!-- Funktionalitet til sticky menu slut -->
 </body>
 
