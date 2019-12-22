@@ -56,9 +56,9 @@
 
 
     <!-- HTML, Editor og Kommentarer start -->
-    <button type="button" class="collapsible">HTML, Editor og Kommentarer</button>
+    <button type="button" class="collapsible">HTML, Editor og Kommentarer </button>
     <section class="content">
-
+        <!-- HTML start -->
         <h3>HTML</h3>
         <img src="Billeder/HTML banner.png" class="banner" alt="">
         <p>HTML står for ”Hyper Text Markup Language”, og bruges til at opbygge skelettet af en hjemmeside. Dvs. at dets
@@ -66,9 +66,10 @@
             at mindst have noget HTML.
             For at kunne gøre brug af HTML til opbygge en hjemmeside, så skal man bruge en ”editor”.
         </p>
+        <!-- HTML slut -->
 
 
-
+        <!-- Editor start -->
         <h3>Editor</h3>
 
         <p>
@@ -98,7 +99,9 @@
             hurtigt kan se hvordan hjemmesiden ser ud, om der er mangler, og måske style ting på en anden måde en man
             lige tænkte over.
         </p>
+        <!-- Editor slut -->
 
+        <!-- Kommentarer start -->
         <h3>Kommentarer</h3>
         <p>
             Når man skal kode, er det en god idé at træne sin kodeskik. Dvs. at skrive koden i små afsnit ad gangen,
@@ -111,6 +114,7 @@
             kommentér, kommentér, og atter kommentér!
 
         </p>
+        <!-- Kommentarer slut -->
     </section>
     <!-- HTML, Editor og Kommentarer start -->
 
@@ -119,7 +123,7 @@
     <section class="content">
         <h3>CSS</h3>
         <img src="Billeder/CSS banner.png" class="banner" alt="">
-        <p>
+        <ul>
             CSS står for ”Cascading Style Sheets”, og er det computersprog der bruges til at style alt HTML. Hvis HTML
             er skelettet på hjemmesiden, så er CSS’en huden, øjnene, ørene, munden, hovedet, armene, benene osv.
             Herudover så bestemmer den også farverne, formerne og placeringen af disse ”kropsdele” på hjemmesiden. CSS
@@ -135,8 +139,9 @@
             eliminerer problemer som kunne have opstået, skulle man have startet med desktopversionen først. Mobile
             first er en tilgang med henblik på at gøre sin hjemmeside 100% mobil venlig først, før alt det andet.
             Syntaks for CSS (regel for hvordan det skal skrives op, og i hvilken rækkefølge) ser sådan her ud:
-        </p>
-        <img src="Billeder/CSS syntaks.jpg" id="tekst-img" alt="billede">
+            <img src="Billeder/CSS syntaks.jpg" id="tekst-img" alt="billede">
+            <span id="source-tekst"> <b>Kilde: Intro til CSS.pdf (side 9)</b> </span>
+        </ul>
 
     </section>
     <!-- CSS tekst slut -->
@@ -162,6 +167,7 @@
         <h3>Attributter</h3>
         <p>
             <img src="Billeder/Attributter.png" id="tekst-img" alt="">
+            <span id="source-tekst"> <b>Kilde: Intro til HTML.pdf (side 12)</b> </span>
             <br>
             <br>
             Attributter giver HTML elementer noget at relatere til. Dvs. at man nu kan nemmere, mere
@@ -178,9 +184,15 @@
             <img src="Billeder/Attribut eksemepl.png" id="tekst-img" alt="">
             <br>
             <span id="source-tekst"> Her er attributnavnet <b>”style”</b> og attributværdien
-                <b>"color:red"</b>.</span>
+                <b>"color:red".
+
+                </b></span>
+            <span id="source-tekst">
+                <b>Kilde: <a href=" https://www.w3schools.com/">Klik her</a></b>
+            </span>
         </p>
         <!-- Attributter slut -->
+
         <!-- Elementer start -->
         <h3>Elementer</h3>
         <p>
@@ -188,201 +200,224 @@
             er med til at definere hvilket stykke kode er hvad, dvs. om det er f.eks. en paragraf, titel, undertitel,
             artikel, billeder mm. Vi refererer til et stykke kode som har et start, og et slut tag, som et ”element”.
             Man kan derfor også sige at en hjemmeside består af rigtig mange elementer
+            <br>
+            <br>
             Et eksempel på et element kunne se således ud:
 
             <br>
             <br>
 
             <span>
-                < h1> Sikkerhed < /h1> </span> <!-- Elementer slut -->
-        </p>
-
-        <!-- Semantik og SEO part 1 start -->
-        <h3>Semantik og SEO</h3>
-        <ul>
-            Semantik og SEO:
-            Grunden til at de har forskellige numre er fordi det er med til at indikere størrelsen af
-            overskriften på
-            hjemmesiden. Derudover så er det også med til at skabe semantik på hjemmesiden. At noget er
-            semantisk,
-            betyder egentlig bare at noget har mening/betydning. Hvis et tag er semantisk, så fortæller
-            det
-            noget om
-            dets indhold.
-            <br>
-            <br>
-            Eksempel:
-
-            <br>
-            <br>
-
-            <li>
                 <b>
-                    < div> :
-                </b> fortæller ingenting om sit indhold.
-            </li>
+                    < h1> Sikkerhed < /h1> </b> </span> </p> <!-- Elementer slut -->
+                            <!-- Semantik og SEO part 1 start -->
+                            <h3>Semantik og SEO</h3>
+                            <ul>
+                                Semantik og SEO:
+                                Grunden til at de har forskellige numre er fordi det er med til at indikere størrelsen
+                                af
+                                overskriften på
+                                hjemmesiden. Derudover så er det også med til at skabe semantik på hjemmesiden. At noget
+                                er
+                                semantisk,
+                                betyder egentlig bare at noget har mening/betydning. Hvis et tag er semantisk, så
+                                fortæller
+                                det
+                                noget om
+                                dets indhold.
+                                <br>
+                                <br>
+                                Eksempel:
 
-            <li>
-                <b>
-                    < table> :
-                </b> fortæller noget om sit indhold idet den markerer alt inden i til at være en
-                ”tabel”, hvilket er
-                også hvad navnet på tagget selv indikerer.
-            </li>
-            <br>
-            <br>
-            Semantik, eller semantiske tags, er med til at give hjemmesiden struktur, og gør det
-            nemmere for
-            søgemaskiner, at finde hjemmesiden, også kendt som ”SEO”. SEO står for ”Search Engine
-            Optimization”,
-            og betyder i bund og grund at det er med til at gøre det nemmere, og mere relevant for
-            søgemaskiner
-            at finde lige præcis DIN hjemmeside først, over andre hjemmesider. Dette er selvfølgelig
-            relevant
-            for at give din hjemmeside mest mulige besøgere, og kliks.
-        </ul>
+                                <br>
+                                <br>
 
-        <br>
-        <br>
+                                <li>
+                                    <b>
+                                        < div> :
+                                    </b> fortæller ingenting om sit indhold.
+                                </li>
 
-        <!-- Semantik og SEO part 1 slut -->
+                                <li>
+                                    <b>
+                                        < table> :
+                                    </b> fortæller noget om sit indhold idet den markerer alt inden i til at være en
+                                    ”tabel”, hvilket er
+                                    også hvad navnet på tagget selv indikerer.
+                                </li>
+                                <br>
+                                <br>
+                                Semantik, eller semantiske tags, er med til at give hjemmesiden struktur, og gør det
+                                nemmere for
+                                søgemaskiner, at finde hjemmesiden, også kendt som ”SEO”. SEO står for ”Search Engine
+                                Optimization”,
+                                og betyder i bund og grund at det er med til at gøre det nemmere, og mere relevant for
+                                søgemaskiner
+                                at finde lige præcis DIN hjemmeside først, over andre hjemmesider. Dette er selvfølgelig
+                                relevant
+                                for at give din hjemmeside mest mulige besøgere, og kliks.
+                            </ul>
 
-        <!-- Semantik og SEO part 2 start -->
-        <h3>Semantik og SEO (part 2)</h3>
-        <ul>
-            Følgende semantiske tags er gode at bruge, for at have sin hjemmeside SEO optimeret:
-            <br>
-            <br>
-            <li>
-                <b>
-                    < section> :
-                </b> Inddeler koden i sektioner, og giver mere overblik over de
-                forskellige afsnit i
-                HTML’en
-            </li>
+                            <br>
+                            <br>
 
-            <li>
-                <b>
-                    < header> :
-                </b> Bruges til at indikere ”hovedet” på hjemmesiden, og er det der ligger
-                øverst
-                på siden.
-            </li>
+                            <!-- Semantik og SEO part 1 slut -->
 
-            <li>
-                <b>
-                    < footer> :
-                </b> En footer bruges til at indikere det nederste på hjemmesiden eller
-                ”fødderne”
-                på den. Det står altid i bunden af en hjemmeside.
-            </li>
+                            <!-- Semantik og SEO part 2 start -->
+                            <h3>Semantik og SEO (part 2)</h3>
+                            <ul>
+                                Følgende semantiske tags er gode at bruge, for at have sin hjemmeside SEO optimeret:
+                                <br>
+                                <br>
+                                <li>
+                                    <b>
+                                        < section> :
+                                    </b> Inddeler koden i sektioner, og giver mere overblik over de
+                                    forskellige afsnit i
+                                    HTML’en
+                                </li>
 
-            <li>
-                <b>
-                    < form> :
-                </b> Forms bliver brugt til at modtage bruger input, i form af små
-                tekstbokse, hvori
-                brugeren kan bl.a. skrive sit navn/adresse/alder, eller noget helt andet.
-            </li>
-            <hr>
-            <br>
-            Her er også nogle eksempler på andre tags som også bliver brugt, men som ikke er semantiske:
-            <li>
-                <b>
-                    < p> :
-                </b> Er en paragraf, og er stort set bare en linje tekst, der ignorerer linjeskift og
-                mellemrum i koden.
-            </li>
-            <li>
-                <b>
-                    < div> :
-                </b> Bruges som regel til at indikere en sektion i koden som ikke nødvendigvis er nødt
-                til
-                at være semantisk, opfører sig mere eller mindre som < p> tagget.
-            </li>
-            <li>
-                <b>
-                    < form> :
-                </b> Ligner meget < div> tagget, men forskellen ligger i at den bruges til at lænke
-                    eksempelvis billede og tekst sammen, således at de står på samme linje. Derudover så
-                    er
-                    span tagget et inline element, mens div er et block element.
-            </li>
-            <li>
-                <b>
-                    < img> :
-                </b> Bruges til at indsætte et billede ind på hjemmesiden. Filen udpeges med en ”src”
-                attribut, og man skriver stien til billedet mellem de to anførelsestegn.
-            </li>
+                                <li>
+                                    <b>
+                                        < header> :
+                                    </b> Bruges til at indikere ”hovedet” på hjemmesiden, og er det der ligger
+                                    øverst
+                                    på siden.
+                                </li>
 
-            <img src="Billeder/img element.png" id="tekst-img" alt="">
-            <hr>
-            <li id="nested-list">
-                <b>
-                    < li> (herunder også < ol> og < ul>):
-                </b>
-                Bruges til at lave lister på hjemmesiden. < ol> bliver brugt til at lave en ”ordered
-                    list” hvilket
-                    vil sige en liste med nummering på, den kunne f.eks. se sådan her ud:
-                    <ol id="ol-tekst-style">
+                                <li>
+                                    <b>
+                                        < footer> :
+                                    </b> En footer bruges til at indikere det nederste på hjemmesiden eller
+                                    ”fødderne”
+                                    på den. Det står altid i bunden af en hjemmeside.
+                                </li>
 
-                        <b>
+                                <li>
+                                    <b>
+                                        < form> :
+                                    </b> Forms bliver brugt til at modtage bruger input, i form af små
+                                    tekstbokse, hvori
+                                    brugeren kan bl.a. skrive sit navn/adresse/alder, eller noget helt andet.
+                                </li>
+                                <hr>
+                                <br>
+                                Her er også nogle eksempler på andre tags som også bliver brugt, men som ikke er
+                                semantiske:
+                                <li>
+                                    <b>
+                                        < p> :
+                                    </b> Er en paragraf, og er stort set bare en linje tekst, der ignorerer linjeskift
+                                    og
+                                    mellemrum i koden.
+                                </li>
+                                <li>
+                                    <b>
+                                        < div> :
+                                    </b> Bruges som regel til at indikere en sektion i koden som ikke nødvendigvis er
+                                    nødt
+                                    til
+                                    at være semantisk, opfører sig mere eller mindre som < p> tagget.
+                                </li>
+                                <li>
+                                    <b>
+                                        < form> :
+                                    </b> Ligner meget < div> tagget, men forskellen ligger i at den bruges til at lænke
+                                        eksempelvis billede og tekst sammen, således at de står på samme linje.
+                                        Derudover så
+                                        er
+                                        span tagget et inline element, mens div er et block element.
+                                </li>
+                                <li>
+                                    <b>
+                                        < img> :
+                                    </b> Bruges til at indsætte et billede ind på hjemmesiden. Filen udpeges med en
+                                    ”src”
+                                    attribut, og man skriver stien til billedet mellem de to anførelsestegn.
+                                </li>
 
-                            <li id="li-tekst-style">Item</li>
-                            <li id="li-tekst-style">Item</li>
-                            <li id="li-tekst-style">Item</li>
-                            <li id="li-tekst-style">Item</li>
+                                <img src="Billeder/img element.png" id="tekst-img" alt="">
+                                <span id="source-tekst">
+                                    <b>Kilde: <a
+                                            href="https://cdo-curriculum.s3.amazonaws.com/media/uploads/img_tag.png/">Klik
+                                            her</a></b>
+                                </span>
+                                <hr>
+                                <li id="nested-list">
+                                    <b>
+                                        < li> (herunder også < ol> og < ul>):
+                                    </b>
+                                    Bruges til at lave lister på hjemmesiden. < ol> bliver brugt til at lave en ”ordered
+                                        list” hvilket
+                                        vil sige en liste med nummering på, den kunne f.eks. se sådan her ud:
+                                        <ol id="ol-tekst-style">
 
-                        </b>
-                    </ol>
-            </li>
-            <hr>
-            <li id="nested-list">
-                En liste uden nummering bruger < ul> i stedet, som står for ”unordered list”, og kunne
-                    se sådan her
-                    ud:
+                                            <b>
 
-                    <ul id="ul-tekst-style">
+                                                <li id="li-tekst-style">Item</li>
+                                                <li id="li-tekst-style">Item</li>
+                                                <li id="li-tekst-style">Item</li>
+                                                <li id="li-tekst-style">Item</li>
 
-                        <b>
+                                            </b>
+                                        </ol>
+                                </li>
+                                <hr>
+                                <li id="nested-list">
+                                    En liste uden nummering bruger < ul> i stedet, som står for ”unordered list”, og
+                                        kunne
+                                        se sådan her
+                                        ud:
 
-                            <li id="li-tekst-style">Item</li>
-                            <li id="li-tekst-style">Item</li>
-                            <li id="li-tekst-style">Item</li>
-                            <li id="li-tekst-style">Item</li>
+                                        <ul id="ul-tekst-style">
 
-                        </b>
+                                            <b>
 
-                    </ul>
+                                                <li id="li-tekst-style">Item</li>
+                                                <li id="li-tekst-style">Item</li>
+                                                <li id="li-tekst-style">Item</li>
+                                                <li id="li-tekst-style">Item</li>
 
+                                            </b>
 
-            </li>
-
-
-        </ul>
-        <!-- Semantik og SEO part 2 slut -->
-
-
-        <!-- Tags, Attributter, Elementer, Semantik, SEO slut -->
-
-        <!-- Links start -->
-        <h3>Links</h3>
-        <p>
-            Links i HTML koden fungere på den måde at man skriver hvad der skal være klikbart imellem to
-            < a> tags, det kunne f.eks. se sådan her ud:
-                <img src="Billeder/Links.jpg" id="tekst-img" alt="">
-                Her er “< a>” tagget starten og ”< /a>” slutningen af elementet. Den røde tekst, er den hjemmeside som
-                        man bliver taget til når man klikker på linket, mens den grønne tekst er linkets navn (det man
-                        faktisk ser på hjemmesiden som blå highlighted tekst og som man kan klikke på). </p> <br>
-                        <br>
+                                        </ul>
 
 
-                        <!-- Links slut -->
+                                </li>
+
+
+                            </ul>
+                            <!-- Semantik og SEO part 2 slut -->
+
+
+                            <!-- Tags, Attributter, Elementer, Semantik, SEO slut -->
+
+                            <!-- Links start -->
+                            <h3>Links</h3>
+                            <p>
+                                Links i HTML koden fungere på den måde at man skriver hvad der skal være klikbart
+                                imellem to
+                                < a> tags, det kunne f.eks. se sådan her ud:
+                                    <br>
+                                    <br>
+                                    <img src="Billeder/Links.jpg" id="tekst-img" alt="">
+                                    <span id="source-tekst"> <b>Kilde Intro til HTML.pdf (side 23)</b> </span>
+                                    <br>
+                                    <br>
+                                    Her er “< a>” tagget starten og ”< /a>” slutningen af elementet. Den røde tekst, er
+                                            den hjemmeside som man bliver taget til når man klikker på linket, mens den
+                                            grønne tekst er linkets navn (det man faktisk ser på hjemmesiden som blå
+                                            highlighted tekst og som man kan klikke på). </p> <br>
+                                            <br>
+
+
+                                            <!-- Links slut -->
 
     </section>
-
-    <button type="button" class="collapsible">Selectors (Simple, Combinator, Pseudo)</button>
+    <!-- Selectors (Simple, Combinator, Pseudo) start -->
+    <button type="button" class="collapsible">Selectors (Simple, Combinator)</button>
     <section class="content">
+        <!-- Simple selectors start -->
         <h3>Simple selectors</h3>
         <ul>
 
@@ -407,17 +442,27 @@
             <span id="source-tekst">Her er elementet ”p” valgt i CSS’en, og vil nu derfor style alt der har tagget < p>
                     i HTML’en. Dette
                     stykke CSS vil centrere teksten og give den en rød farve.</span>
+            <span id="source-tekst">
+                <b>Kilde: <a href="https://www.w3schools.com/">Klik her</a> </b>
+            </span>
+
             <hr>
             <h4> ID selector eksempel:</h4>
             <img src="Billeder/ID selector.png" id="tekst-img" alt="">
             <span id="source-tekst">I dette eksempel vælges alle HTML elementer med ID’et ”para1”. Her vil de blive
                 stylet til a være
                 centreret og have en rød farve.</span>
+            <span id="source-tekst">
+                <b>Kilde: <a href="https://www.w3schools.com/">Klik her</a> </b>
+            </span>
             <hr>
             <h4> Class selector eksempel:</h4>
             <img src="Billeder/Class selector.png" id="tekst-img" alt="">
             <span id="source-tekst">Klasserne med navnet ”center” vil blive valgt i HTML’en, og vil blive centreret og
                 få en rød tekst på hjemmesiden.</span>
+            <span id="source-tekst">
+                <b>Kilde: <a href="https://www.w3schools.com/">Klik her</a> </b>
+            </span>
 
             <hr>
             <h4>Grouping selector eksempel:</h4>
@@ -425,11 +470,16 @@
             <span id="source-tekst">Udover ovenstående så kan man også gøre brug af grouping selectors. Her kan man
                 vælger flere elementer samtidigt, og style dem alle sammen på samme måde, uden at skulle have til at
                 skrive mange linjer kode i CSS.</span>
+            <span id="source-tekst">
+                <b>Kilde: <a href="https://www.w3schools.com/">Klik her</a> </b>
+            </span>
 
 
         </ul>
+        <!-- Simple selectors slut -->
 
-        <h3>Combinator selectors:</h3>
+        <!-- Combinator selectors start -->
+        <h3>Combinator selectors</h3>
         <ul>
             Herudover er der også ”combinator selectors” som vælger mere en bare én ting fra HTML’en, dette kunne være
             flere forskellige elementer, eller elementer der er ”child” af et andet element (hvilket vil sige at et
@@ -441,6 +491,9 @@
             <img src="Billeder/Descendant selectors.png" id="tekst-img" alt="">
             <span id="source-tekst">Vælger alle < p> tags, som ligger inde i < div> tags og giver dem en gul
                         baggrund.</span>
+            <span id="source-tekst">
+                <b>Kilde: <a href="https://www.w3schools.com/">Klik her</a> </b>
+            </span>
             <hr>
             <h4>Child selector eksempel:</h4>
             <img src="Billeder/Grouping selector.png" id="tekst-img" alt="">
@@ -448,166 +501,693 @@
                         giver
                         dem en gul baggrund. Dvs. at de < p> tags som bliver valgt, skal ligge inde i < div> tags i
                                 HTML’en.</span>
+            <span id="source-tekst">
+                <b>Kilde: <a href="https://www.w3schools.com/">Klik her</a> </b>
+            </span>
             <hr>
             <h4>Adjacent selector eksempel:</h4>
             <img src="Billeder/Adjacent selector.png" id="tekst-img" alt="">
             <span id="source-tekst">Denne type selector vælger det første < p> element i HTML’en som kommer lige efter
                     < div> tagget. Alle andre < p> tags som kommer herefter blive ignoreret.</span>
+            <span id="source-tekst">
+                <b>Kilde: <a href="https://www.w3schools.com/">Klik her</a> </b>
+            </span>
             <hr>
             <h4>General sibling selector eksempel:</h4>
             <img src="Billeder/General sibling selector.png" id="tekst-img" alt="">
-            <span id="source-tekst">General sibling selectoren vælger i dette eksempel alle < p > tags som er søskende til
-                    < div > tags. Dvs. at her vil alle < p > tags som kommer efter < div > tags blive valgt.</span>
+            <span id="source-tekst">General sibling selectoren vælger i dette eksempel alle < p> tags som er søskende
+                    til
+                    < div> tags. Dvs. at her vil alle < p> tags som kommer efter < div> tags blive valgt.</span>
+            <span id="source-tekst">
+                <b>Kilde: <a href="https://www.w3schools.com/">Klik her</a> </b>
+            </span>
         </ul>
+        <!-- Combinator selectors slut -->
 
     </section>
+    <!-- Selectors (Simple, Combinator, Pseudo) slut -->
 
-    <button type="button" class="collapsible">Kaskaderegler, Box model, Farver, Skrifttyper</button>
+    <!-- Kaskaderegler, Specificity, Source order, Box model, Farver, Skrifttyper, Versionsstyring start -->
+    <button type="button" class="collapsible">Kaskaderegler, Box model, Farver, Skrifttyper, og Versionsstyring</button>
     <section class="content">
+        <!-- Kaskaderegler start -->
         <h3>Kaskaderegler</h3>
+        <p>
+            Når man snakker kaskaderegler, så snakker man om regler for hvordan CSS-koden skal opføre sig i visse
+            situationer. Disse kaskaderegler skal definere hvordan to eller flere modstridende linjer i koden skal,
+            opføre sig på hjemmesiden, og hvem af dem der faktisk får prioritet.
+        </p>
+        <!-- Kaskaderegler slut -->
+
+        <!-- Specificity start -->
+        <h3>Specificity</h3>
         <ul>
 
-            ”Selector” er den første del i et stykke CSS-kode, og indikerer hvor i HTML’en der skal styles på.
-            Herefter
-            kommer ”property”, den indikerer hvad CSS’en skal style. Til sidst kommer ”value”, som egentlig bare er
-            en
-            værdi for property, og fortæller den hvor meget eller i hvilken grad HTML’en skal styles. Selve
-            selectoren
-            kan være flere forskellige ting. Den kan enten være et tag direkte fra HTML’en, eller et ID (ID’et
-            vælger
-            alle HTML elementer med samme ID, som i CSS’en, og angives med et ”#” før navnet på ID’et), eller en
-            klasse
-            (klassen vælger alle HTML elementer med samme klasse som i CSS’en og angives med et ”.” før klassenavnet
-            på
-            klassen).
-            <br>
-            <br>
-            <h4>Element selector eksempel:</h4>
-            <br>
-            <img src="Billeder/Element selector.png" id="tekst-img" alt="">
-            <span id="source-tekst">Her er elementet ”p” valgt i CSS’en, og vil nu derfor style alt der har tagget < p>
-                    i HTML’en. Dette
-                    stykke CSS vil centrere teksten og give den en rød farve.</span>
-            <hr>
-            <h4> ID selector eksempel:</h4>
-            <img src="Billeder/ID selector.png" id="tekst-img" alt="">
-            <span id="source-tekst">I dette eksempel vælges alle HTML elementer med ID’et ”para1”. Her vil de blive
-                stylet til a være
-                centreret og have en rød farve.</span>
-            <hr>
-            <h4> Class selector eksempel:</h4>
-            <img src="Billeder/Class selector.png" id="tekst-img" alt="">
-            <span id="source-tekst">Klasserne med navnet ”center” vil blive valgt i HTML’en, og vil blive centreret og
-                få en rød tekst på hjemmesiden.</span>
+            For at kunne forstå hvorfor et stykke CSS-kode, ikke gider at blive anvendt på hjemmesiden, så skal man
+            forstå specificity. Specificity er det regelsæt i CSS-koden som angiver hvilken style bliver anvendt på
+            hvad. Det er også med til at organisere koden, og give den struktur, således at den bliver mere læsbar. Sagt
+            på en anden måde, så er der visse selectors der har forrang (højere ”vigtighed”) end andre selectors. Man
+            inddeler som regel specificity i fire forskellige selector grupper (rangen på de forskellige selector er
+            også i rækkefølge):
 
-            <hr>
-            <h4>Grouping selector eksempel:</h4>
-            <img src="Billeder/Grouping selector.png" id="tekst-img" alt="">
-            <span id="source-tekst">Udover ovenstående så kan man også gøre brug af grouping selectors. Her kan man
-                vælger flere elementer samtidigt, og style dem alle sammen på samme måde, uden at skulle have til at
-                skrive mange linjer kode i CSS.</span>
+            <li id="nested-list">
+
+                <ul id="ul-tekst-style">
+
+                    <b>
+
+                        <li id="li-tekst-style">Inline Styles</li>
+                        <li id="li-tekst-style">ID’er</li>
+                        <li id="li-tekst-style">Klasser, atributter, pseudo-klasser</li>
+                        <li id="li-tekst-style">Elements og pseudo-elements</li>
+
+                    </b>
+
+                </ul>
 
 
+            </li>
         </ul>
+        <!-- Specificity slut -->
 
+        <!-- Source order start -->
+        <h3>Source order</h3>
+        <p>
+            Source order omhandler deklareringer i CSS-koden, og hvilken deklarering man har lavet senest. Hvis der nu
+            skulle stå at man styler headeren ét sted i CSS’en, men samtidig længere nede i koden, stå et nyt stykke
+            kode for samme header, så vil det seneste stykke kode tage prioritet. Det man har skrevet sidst, er også det
+            CSS’en vil gå efter. Specificity har altid forrang over source order. Der er dog én undtagelse og det er
+            brugen af ”!important”. Den går lige forbi disse slags regler, men er også samtidig med til at ødelægge
+            ideen og funktionaliteten af kaskadereglerne, og dermed også ruinere pointen med kaskaderegler som en
+            helhed.
+        </p>
+        <!-- Source order slut -->
+
+        <!-- Box model start -->
         <h3>Box model</h3>
-        <ul>
-            Herudover er der også ”combinator selectors” som vælger mere en bare én ting fra HTML’en, dette kunne være
-            flere forskellige elementer, eller elementer der er ”child” af et andet element (hvilket vil sige at et
-            element er et nedarvet element af et andet.) En ”combinator” er noget som beksriver forholdet mellem to
-            selectors. Man kan derfor nemmere spotte i CSS’en hvilket element der er valgt, og i forhold til hvad.
+        <p>
+            Når der snakkes om ”Box model” så snakkes der om hvordan forskellige HTML-elementer repræsenteres i
+            forskellige slags kasser. Der findes to forskellige typer, ”inline” og ”block”. Inline er når boksene
+            placerer sig horisontalt efter hinanden, mens block er når kasserne placeres ovenover hinanden, eller i en
+            stak. Der findes også noget der hedder ”inline-block” hvilket er en kombination af de to fornævnte box
+            models. Denne type boks, placere boksene horisontalt efter hinanden (inline), men beholder størrelsen af
+            block boksen (block). For at kunne bruge dette i CSS’en, så kan man skrive eksempelvis:
             <br>
             <br>
-            <h4>Decendant selector eksempel:</h4>
-            <img src="Billeder/Descendant selectors.png" id="tekst-img" alt="">
-            <span id="source-tekst">Vælger alle < p> tags, som ligger inde i < div> tags og giver dem en gul
-                        baggrund.</span>
-            <hr>
-            <h4>Child selector eksempel:</h4>
-            <img src="Billeder/Grouping selector.png" id="tekst-img" alt="">
-            <span id="source-tekst">Denne selector vælger alle < p> tags som er ”child” af < div> tags i HTML’en, og
-                        giver
-                        dem en gul baggrund. Dvs. at de < p> tags som bliver valgt, skal ligge inde i < div> tags i
-                                HTML’en.</span>
-            <hr>
-            <h4>Adjacent selector eksempel:</h4>
-            <img src="Billeder/Adjacent selector.png" id="tekst-img" alt="">
-            <span id="source-tekst">Denne type selector vælger det første < p> element i HTML’en som kommer lige efter
-                    < div> tagget. Alle andre < p> tags som kommer herefter blive ignoreret.</span>
-            <hr>
-            <h4>General sibling selector eksempel:</h4>
-            <img src="Billeder/General sibling selector.png" id="tekst-img" alt="">
-            <span id="source-tekst">General sibling selectoren vælger i dette eksempel alle < p > tags som er søskende til
-                    < div > tags. Dvs. at her vil alle < p > tags som kommer efter < div > tags blive valgt.</span>
-        </ul>
 
+            <span><b>display: block/inline/inline-block</b></span>
+        </p>
+        <!-- Box model slut -->
+
+        <!-- Box properties start -->
+        <h3>Box properties</h3>
+        <ul>
+            I modsætning til ”Box model”, så er ”Box properties” de forskellige bokses egenskaber, idet de alle har
+            følgende:
+
+            <li id="nested-list">
+
+                <ul id="ul-tekst-style">
+
+                    <b>
+
+                        <li id="li-tekst-style">Content: (indhold)</li>
+                        <li id="li-tekst-style">Padding: (afstanden mellem ramme og indholdet)</li>
+                        <li id="li-tekst-style">Border: (kan slå synlighed på kant fra eller til)</li>
+                        <li id="li-tekst-style">Margin: (afstanden mellem ramme og andre elementers margen)</li>
+
+                    </b>
+                    <br>
+                    <br>
+
+
+                </ul>
+                <br>
+                <br>
+                <img src="Billeder/Box model.jpg" alt="">
+                <br>
+                <span id="source-tekst"> <b>Kilde: Intro til CSS.pdf (side 23)</b> </span>
+
+            </li>
+
+        </ul>
+        <!-- Box properties slut -->
+
+        <!-- Farver start -->
         <h3>Farver</h3>
         <ul>
-            Herudover er der også ”combinator selectors” som vælger mere en bare én ting fra HTML’en, dette kunne være
-            flere forskellige elementer, eller elementer der er ”child” af et andet element (hvilket vil sige at et
-            element er et nedarvet element af et andet.) En ”combinator” er noget som beksriver forholdet mellem to
-            selectors. Man kan derfor nemmere spotte i CSS’en hvilket element der er valgt, og i forhold til hvad.
+            Måden man styrer farver på i CSS’en er faktisk ret nemt og ligetil. Man kan enten vælge at skrive navnet på
+            farven direkte (på engelsk), eller man kan vælge at gøre det med mere præcision med disse tre metoder:
+
+            <li id="nested-list">
+
+                <ul id="ul-tekst-style">
+
+                    <b>
+
+                        <li id="li-tekst-style">RGB: rgb(255, 255, 255)</li>
+                        <li id="li-tekst-style">HEX-kode: #000000</li>
+                        <li id="li-tekst-style">HSL: (100%, 100%, 100%)</li>
+
+
+                    </b>
+                    <br>
+                    <br>
+
+
+
+
+                </ul>
+                <h4>RGB:</h4>
+                Den øverste måde at skrive farver på i CSS (RGB), fungere på samme måde som det lyder. RGB står får
+                ”Red, Green, Blue”, og hver af de tre værdier kan gå fra 0-255. Jo højere et nummer, jo mere mæthed i
+                farven. Den første værdi er rød, den anden grøn, og den tredje blå.
+                <br>
+                <img src="Billeder/RGB calculator.PNG" alt="">
+                <span id="source-tekst"> Man kan bruge en RGB calculator på w3school’s hjemmeside </span>
+                <span id="source-tekst"> <b>Kilde: <a href="https://www.w3schools.com/colors/colors_rgb.asp/">Klik
+                            her</a></b> </span>
+                <hr>
+                <h4>HEX-kode</h4>
+                HEX-kode er en anden måde at skrive farver på. Her bestemmes værdien gennem et ”#” efterfulgt af en
+                kombination af bogstaver og tal. Ingen kan huske alle værdierne i hovedet og hvilken farve de står får,
+                men i eksemplet for oven, bliver farven sort.
+                <img src="Billeder/HEX-kode.PNG" alt="">
+                <span id="source-tekst"> Der er en HEX-kode ”pick a color” som man kan lege med på w3schools hjemmeside.
+                </span>
+                <span id="source-tekst"> <b>Kilde: <a
+                            href="https://www.w3schools.com/colors/colors_hexadecimal.asp">Klik her</a></b> </span>
+                <h4>HSL</h4>
+                I HSL arbejder man med procenter. Dvs. at man styrer hvor meget Hue (nuance), Saturation (mæthed), og
+                Lightness (lyshed) Alle værdier går fra 0% - 100%.
+                <img src="Billeder/HSL.PNG" alt="">
+                <span id="source-tekst"> Der findes en ”HSL calculator” på w3school’s hjemmeside som man kan bruge
+                </span>
+                <span id="source-tekst"> <b>Kilde: <a href="https://www.w3schools.com/colors/colors_hsl.asp">Klik
+                            her</a></b> </span>
+
+            </li>
+
+        </ul>
+        <!-- Farver slut -->
+
+        <!-- Skrifttyper start -->
+        <h3>Skrifttyper</h3>
+        <p>En god hjemmeside er en hjemmeside med relevante skrifttyper. Alle skrifttyper kan være gode, det er bare et
+            spørgsmål om hvilke skrifttyper man skal bruge. Man bliver nød til at sætte sig ned og tænke over sit site,
+            og hvad det egentlig handler om, og derudfra selv bestemme hvilken skrifttype man gerne vil have til
+            overskriften, underoverskrifter, brødtekst, titler, undertitler osv. Kan man anvende den rigtige skrifttype
+            til den rette hjemmeside, så vil man også få en glad læser, og det vil samtidigt være nemt og roligt for
+            øjnene at læse siden.
             <br>
             <br>
-            <h4>Decendant selector eksempel:</h4>
-            <img src="Billeder/Descendant selectors.png" id="tekst-img" alt="">
-            <span id="source-tekst">Vælger alle < p> tags, som ligger inde i < div> tags og giver dem en gul
-                        baggrund.</span>
+            Der vælges som regel højst, 2-3 skriftypper på en hjemmeside, dog er det også muligt at skabe en hjemmeside
+            med blot 1 skrifttype. Det kan dog gå hen og blive lidt ensartet, og kedeligt at læse. Det er ikke alle
+            computere der har installeret de samme slags fonte, så man skal derfor ud og lede efter nye fonte på nettet.
+            Det kan muligvis være gennem ”Google Fonts”, eller ”Adobe Typekit”.
+            <br>
+            <br>
+            Google Fonts har en nem og gratis løsning til folk der gerne vil have et hav af valg, af skrifttyper.
+            Skrifttypen selv bliver hostet af Google, og er meget let at implantere ind på sin hjemmeside. Adobe Typekit
+            Har valgt at inddele de skrifttyper de har i ”packs” og ”family”, alt efter hvad man er ude efter. Herefter
+            kan man vælge at tilføje dem til sin Adobe konto, hvor man derfra kan importere og implementere dem ind i
+            sin kode.
+        </p>
+        <!-- Skrifttyper slut -->
+
+        <!-- Positionering, Float og Clear start -->
+        <h3>Positionering, Float og Clear</h3>
+        <ul>
+            Positionering i CSS foregår gennem fem forskellige måder (udover grids og andet lignende), og de lyder som
+            følger:
+
+            <li id="nested-list">
+
+                <ul id="ul-tekst-style">
+
+
+
+                    <li id="li-tekst-style"><b>Page flow - </b>Bliver positioneret fra toppen mod bunden.</li>
+                    <li id="li-tekst-style"> <b>Relative - </b>Minder om page flow, men er foskudt en smule.</li>
+                    <li id="li-tekst-style"> <b>Absolut - </b>Ikke med i flowet, men følger stadig ved at scrolle på
+                        siden.</li>
+                    <li id="li-tekst-style"> <b>Fixed - </b>Er ikke med i flowet, og følger heller ikke med ved at
+                        scrolle</li>
+                    <li id="li-tekst-style"> <b>Float - </b>Heller ikke med i flowet, og andre elementer kan flyde
+                        udenom.</li>
+
+
+                    <br>
+                    <br>
+
+
+                </ul>
+                <br>
+                Float er speciel idet at elementet flyder over et andet. Man kan specificere hvilken side elementet skal
+                flyde hen til. Indholdet i det overordnede element vil flyde udenom, således at det ikke ligger oveni
+                hinanden.
+                Bruges mest til at placere billeder, og andre elementer ved siden af hinanden.
+                <br>
+                <br>
+                Clear hjælper med afgrænsningen af hvilke sider der må røre andre elementer oveni det overordnede
+                element. Kan have følgende values: ”left”, ”right”, ”both”, og ”none”
+
+        </ul>
+        <!-- Positionering, Float og Clear slut -->
+
+
+        <!-- Versionsstyring start -->
+        <h3>Versionsstyring</h3>
+        <ul>
+            Versionsstyring eller ”version control” på engelsk, omhandler at holde styr på sine filer, og hvilken
+            version af dem der er den seneste. Det kan være alt fra navngivning af mapper og filer, til at gemme noget i
+            skyen gennem en service som Onedrive, Google Drive, eller lignende. Indenfor kodning bliver der typisk brugt
+            hjemmesider som ”GitHub”, Gitlab” ”BitBucket”, og mange andre lignende. Disse hjemmesider har også typisk en
+            software version, som er med til at gøre det endnu lettere, og hurtigere at opdaterer sine filer og mapper.
+            Softwaren, er ligesom ”onlineversionen”, med til at holde styr på hvilken fil der er ændret, slettet,
+            opdateret osv., og er altid i synkronisering med versionen i skyen.
+            Versionsstyring bliver brugt af alle i hele verden, til alverdens projekter, men bliver brugt især meget af
+            it-folk. Det kan være alt lige fra:
+
+            <li id="nested-list">
+
+                <ul id="ul-tekst-style">
+
+                    <b>
+
+                        <li id="li-tekst-style">Organisationer</li>
+                        <li id="li-tekst-style">Hobby-kodere</li>
+                        <li id="li-tekst-style">Programmører</li>
+                        <li id="li-tekst-style">Firmaer/Iværksættere</li>
+
+                    </b>
+                    <br>
+                    <br>
+
+
+                </ul>
+                <br>
+                Og bliver brugt til udvikling af bl.a.:
+
+                <ul id="ul-tekst-style">
+
+                    <b>
+
+                        <li id="li-tekst-style">IT-systemer</li>
+                        <li id="li-tekst-style">Apps</li>
+                        <li id="li-tekst-style">Hjemmesider</li>
+                        <li id="li-tekst-style">Frameworks</li>
+                        <li id="li-tekst-style">Hobby-udvikling</li>
+                        <li id="li-tekst-style">Nye løsninger af problemer</li>
+
+
+                    </b>
+                    <br>
+                    <br>
+
+
+                </ul>
+
+                <h4>Git:</h4>
+                Git er en protokol, hvilket vil sige at det er en ”standard”. Git er ikke det samme som GitHub og skal
+                ikke
+                forveksles med det, men er i stedet et versionsstyringssystem. Man kan selv opsætte en Git-server, eller
+                man
+                kan vælge at gøre brug at tjenester som Github, Gitlab, Bitbucket, mm. Git blev oprettet og skrevet a
+                Linus
+                Torvald, og var oprindeligt lavet til Linux kernel, som er et open-source, unix lignende operativsystem.
+                <br>
+                <br>
+                <h4>GitHub:</h4>
+                GitHub er en webplatform, dog også med en pc-klient version der tillader at man kan oprette repositories
+                (en
+                form for bibliotek for filer og mapper). GitHub har en masse features, der hjælper med projektstyring,
+                samarbejde, version kontrol, og meget andet. Det er et socialt medie idet at man kan dele kode med
+                andre, og
+                gøre brug af andres kode, helt frit og kvit. Det blev lavet med den intention at folk videregiver deres
+                kode, eller hjælper hinanden med at arbejde på projekter, hvad end det er private eller offentlige
+                opgaver.
+                GitHub er blandt et af de mest populære kodedelingssite og ville være lidt mærkeligt hvis man ikke
+                kendte
+                til det som programmør. Det er også et site som man kan man bruge som en portfolio for den samling af
+                kode,
+                filer, og mapper man nu efterhånden får lavet, gennem sin karriere. Der er også mulighed for private
+                repositories, til lukkede og egne projekter.
+                <br>
+                <br>
+                <h4>Versionsstyringsbegreber:</h4>
+
+                <b> Repository (repo)</b> – et bibliotek for alle filer, mapper. Bruges som en stor projektmappe.
+                <br>
+                <br>
+                <b> Commit (at comitte)</b> – at gemme sine seneste ændringer i projektmappen (repository), med mulighed
+                for at
+                tjekke hvilke ændringer der er blevet lavet, og dermed også mulighed for at gå et skridt tilbage, skulle
+                der være noget galt med den seneste version.
+                <br>
+                <br>
+                <b>Pull</b> – at nedhente de seneste ændringer fra repository, og merger dem med sine egne.
+                <br>
+                <br>
+                <b>Pull request</b> – en anmodning om at kunne pulle fra skyen.
+                <br>
+                <br>
+                <b>Branch</b> – en sidegren som arbejdes på, før man merger ind i master branch (hovedgrenen). Det er en
+                kopi
+                af den seneste version i skyen, og man berører ikke hovedgrenen imens man arbejder på denne forgrening
+                <br>
+                <br>
+                <b>Master branch</b> – hovedgrenen i versionstyringen, og er den endelige version af koden. Man skal kun
+                merge,
+                hvis man er sikker på at det ikke vil få konflikter, og man har fået testet alt hvad man vil teste af.
+                <br>
+                <br>
+                <img src="/Billeder/Git flow.png" alt="">
+                <span id="source-tekst"> Eksempel på et git flow </span>
+                <span id="source-tekst"> <b>Kilde: Lavet af Ahmad Azzam</b> </span>
+                <span id="source-tekst"> <b> <a id="gitflow-img" href=" https://imgur.com/a/gj2hBKE">Direkte
+                            link</a></b> </span>
+
+
+            </li>
+
+
+        </ul>
+        <!-- Versionsstyring slut -->
+
+        <!-- Kaskaderegler, Specificity, Source order, Box model, Farver, Skrifttyper, Versionsstyring slut -->
+
+
+    </section>
+    <!-- Layout og Design start -->
+    <button type="button" class="collapsible">Layout</button>
+    <section class="content">
+        <h3>Layout</h3>
+        <ul>
+            At kunne designe en hjemmeside er ikke bare noget man lige gør over en dag eller to, det handler om meget
+            mere end det. Først og fremmest er der de forskellige skærmstørrelser på de forskellige enheder, og hver
+            enhed har et sæt antal pixels i højden og i bredden. Som webdesigner så ønsker man at brugeren får så
+            optimal en oplevelse som muligt uanset hvor henne i verden de er, og ligegyldigt hvilken enhed de er på.
+            Samtidigt så ønsker man også som designer at skulle kode så lidt som muligt, men stadigvæk med det bedste
+            resultat som kan opnås. Der skal kun være én version af hjemmesiden, men den skal samtidigt også kunne
+            tilpasse sig de forskellige skærmstørrelser ”on the go”. Herudover så ønsker man også som designer at sit
+            site har en ged SEO. For at kunne opnå denne tilfredsstillelse så skal man gøre brug af ”@mediaqueries”.
+            @mediaqueries bruges som et breakpoint, således at når man når til en hvis skærmstørrelse (i bredden) så
+            skifter siden layout, således at det bedre kan tilpasse sig hjemmesiden på den givne enhed.
             <hr>
-            <h4>Child selector eksempel:</h4>
-            <img src="Billeder/Grouping selector.png" id="tekst-img" alt="">
-            <span id="source-tekst">Denne selector vælger alle < p> tags som er ”child” af < div> tags i HTML’en, og
-                        giver
-                        dem en gul baggrund. Dvs. at de < p> tags som bliver valgt, skal ligge inde i < div> tags i
-                                HTML’en.</span>
-            <hr>
-            <h4>Adjacent selector eksempel:</h4>
-            <img src="Billeder/Adjacent selector.png" id="tekst-img" alt="">
-            <span id="source-tekst">Denne type selector vælger det første < p> element i HTML’en som kommer lige efter
-                    < div> tagget. Alle andre < p> tags som kommer herefter blive ignoreret.</span>
-            <hr>
-            <h4>General sibling selector eksempel:</h4>
-            <img src="Billeder/General sibling selector.png" id="tekst-img" alt="">
-            <span id="source-tekst">General sibling selectoren vælger i dette eksempel alle < p > tags som er søskende til
-                    < div > tags. Dvs. at her vil alle < p > tags som kommer efter < div > tags blive valgt.</span>
+
+
+            <li id="nested-list">
+                <h4>Layout:</h4>
+                Layoutet defineres som regel i fire overordnede former:
+                <ul id="ul-tekst-style">
+
+                    <b>
+
+                        <li id="li-tekst-style">Statisk (fixed width)</li>
+                        <li id="li-tekst-style">Flydende (”liquid layout”, flydende og elastisk)</li>
+                        <li id="li-tekst-style">Responsiv (tilpasser sig skærmstørrelsen ”on the go”)</li>
+                        <li id="li-tekst-style">Adaptiv (blanding mellem statisk og responsiv)</li>
+
+                    </b>
+                    <br>
+                    <br>
+
+
+
+                </ul>
+
+
+            </li>
+            Et statisk webdesign omhandler brugen af en fast bredde på hjemmesiden. Dvs. at denne type design ikke vil
+            ændre størrelse ved forskellige skærmstørrelser. Alt ekstra plads på skærmen, vil blive til tomt plads, med
+            noget mellemrum. På mobile enheder skaleres dette ved at zoome ind. Det var engang det dominerende design,
+            og designeren havde også samtidigt mere kontrol over resultatet. Dog fungerer dette meget dårligt på alle
+            andre skærmstørrelser end den tiltænkte.
+            <br>
+            <br>
+            <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/u9H656Z">Direkte Link til
+                        "Static" layout eksempel</a></b> </span>
+            <span id="source-tekst"> <b>Kilde: Responsive i praksis.pdf (side 6)</b> </span>
+            <br>
+            <br>
+            Flydende webdesign er meget mere tilpassende idet at det selv tilpasser sig til bredden, og man angiver
+            samtidigt bredder hyppigt i procenter. Her kan elementer blive meget små og smalle og der er samtidigt
+            grænser for hvor småt disse elementer kan gå. Et fluid webdesign bliver normalt valgt
+            når indholdet og funktionaliteten på sitet, vægtes højere end den grafiske del. Det flydende webdesign
+            udnytter pladsen godt, og giver også brugeren en bedre oplevelse.
+            <br>
+            <br>
+            <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/uHmqqnE">Direkte Link til
+                        "Liquid" layout eksempel</a></b> </span>
+            <span id="source-tekst"> <b>Kilde: Responsive i praksis.pdf (side 8)</b> </span>
+            <br>
+            <br>
+            Det responsive layout består meget typisk af et fluid layout, herunder samtidigt under en række regler som
+            ændrer på skærmbredden afhængigt af hvilken enhed man som bruger er på. Her bliver der gjort brug af ”media
+            quieries” (@media) i CSS, og det er altid samme HTML og CSS-filer uanset hvilken enhed der bliver brugt. Det
+            er den foretrukne måde i dag at lave hjemmesider på, og er også blevet en standard. Det er ikke særligt
+            svært eller vanskeligt, men kræver dog en masse planlægning og omtanke. Herunder skal man også gå ind med
+            mindsettet ”mobile first” da det ellers vil få store konsekvenser senere hen skulle man have sprunget over,
+            eller glemt dette trin. Det er altid nemmest at designe til noget der har begrænset plads FØRST, før man
+            overhovedet går i gang med en skærmstørrelse hvor der kan være meget mere plads.
+            <br>
+            <br>
+            <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/NI8XD3w">Direkte Link til
+                        "Responsive" layout eksempel</a></b> </span>
+            <span id="source-tekst"> <b>Kilde: Responsive i praksis.pdf (side 10)</b> </span>
+            <br>
+            <br>
+            Det adaptive layout er noget der ligger imellem en statisk og en responsiv tilgang. Består selv af en række
+            statiske layouts og styres af @mediaqueries. Dog ville der være for lidt eller for meget plads på skærme der
+            ikke rammer lige præcis de breakpoints der er i koden. Samtidigt er det noget man vælger ret sjældent hvis
+            der ellers er mulighed for at gøre det responsivt. Bruges dog ofte til at konvertere et statisk layout om
+            til et responsivt layout, uden at skulle skrive det hele om igen. Her er tanken, i modsætning til det
+            responsive, ”Mobile last”.
+            <br>
+            <br>
+            <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/v3N9HxI">Direkte Link til
+                        "Adaptive" layout eksempel</a></b> </span>
+            <span id="source-tekst"> <b>Kilde: Responsive i praksis.pdf (side 10)</b> </span>
+            <br>
+            <br>
         </ul>
 
-        <h3>Skrifttyper</h3>
+
+    </section>
+    <!-- Layout og Design slut -->
+
+    <!-- Internettets historie, Mindmap, Server og Klient start -->
+    <button type="button" class="collapsible">Internettets historie, Mindmap, Server og Klient</button>
+    <section class="content">
+        <h3>Internettets historie</h3>
         <ul>
-            Herudover er der også ”combinator selectors” som vælger mere en bare én ting fra HTML’en, dette kunne være
-            flere forskellige elementer, eller elementer der er ”child” af et andet element (hvilket vil sige at et
-            element er et nedarvet element af et andet.) En ”combinator” er noget som beksriver forholdet mellem to
-            selectors. Man kan derfor nemmere spotte i CSS’en hvilket element der er valgt, og i forhold til hvad.
+            Det hele startede tilbage i 1957 det var nemlig her man startede med at tænke på om computeren kunne
+            håndtere flere opgaver end én ad gangen, i stedet for at skulle sende én mand en ad gangen for at sende ét
+            styks information. Den 4. oktober 1957, under den kolde krig, blev der sendt en satellit til rummet af
+            Sovjetunionen, USA blev hurtigt bange for at der skulle ske et ”missile gap” (frygten for at Sovjetunionen
+            ville snart have flere missiler end dem selv, hvilket var noget af det allervigtigste på det tidspunkt). For
+            at USA kunne komme på banen igen, så valgte de at lave et stort computernetværk som det kaldte ”ARPANET”, og
+            det valgte de at gøre gennem en plan de kaldte for ”DARPA”. Man delte netværket op i fire forskellige dele.
+            Den militære del ”RAND Corporation”, den kommercielle del ”NPL”, og den videnskabelige del ”CYCLADES”. Disse
+            dele ville senere hen blive grundlaget for det internet vi kender i dag.
             <br>
             <br>
-            <h4>Decendant selector eksempel:</h4>
-            <img src="Billeder/Descendant selectors.png" id="tekst-img" alt="">
-            <span id="source-tekst">Vælger alle < p> tags, som ligger inde i < div> tags og giver dem en gul
-                        baggrund.</span>
+            Manden der stod bag det egentlige internet som vi kender i dag, hedder Tim Bernes-Lee og var en del af det
+            vi kalder for ”Hypertext Pioneers”. Han fik endelig oprettet internettet som vi kender det i dag, i 1990.
+            Det gjorde han på den måde at han brugte tidligere information fra andre ”Hypertext Pioneers”, både i sin og
+            før hans tid, lagte det alt sammen, og fik endelig bragt Hypertext til internettet. Nu kunne man lige
+            pludselig browse internettet med et unikt men dog et simpelt design, som tilladte at internettet som en
+            helhed at blive adopteret af verden.
+            <br>
+            <br>
+            Herudover kunne man dele internettets generelle historie gennem tiden i fem forskellige dele:
+
+            <li id="nested-list">
+                <ul id="ul-tekst-style">
+
+                    <b>
+
+                        <li id="li-tekst-style">Tidlige eksperimenter (fra 1993)</li>
+                        <li id="li-tekst-style">Under konstruktionen (fra 1996)</li>
+                        <li id="li-tekst-style">Semantisk søgning (fra 2000)</li>
+                        <li id="li-tekst-style">Sociale netværk (fra 2003)</li>
+                        <li id="li-tekst-style">Det mobile web (fra 2010)</li>
+
+                    </b>
+                    <br>
+                    <br>
+
+
+
+                </ul>
+
+
+            </li>
+
+            <h4>Tidlige eksperimenter ( 1993-1995):</h4>
+            Her blev udviklingen af den første browser NCSA Mosaic etableret. Denne første periode handlede meget om
+            hvordan et websted skulle formes og opbygges fra bunden. Den grafiske del blev holdt tilbage af de
+            teknologiske begrænsninger, af HTML og browseren. Man ikke rigtig kontrollere font type, eller størrelse på
+            det tidspunkt. Heller ingen baggrundsfarve eller centrering af teksten var muligt.
             <hr>
-            <h4>Child selector eksempel:</h4>
-            <img src="Billeder/Grouping selector.png" id="tekst-img" alt="">
-            <span id="source-tekst">Denne selector vælger alle < p> tags som er ”child” af < div> tags i HTML’en, og
-                        giver
-                        dem en gul baggrund. Dvs. at de < p> tags som bliver valgt, skal ligge inde i < div> tags i
-                                HTML’en.</span>
+            <h4>Under konstruktionen ( 1996-2000):</h4>
+            Under denne periode steg antallet af brugere på webbet vanvittig meget. Det gav lige pludselige kommercielle
+            muligheder gennem internettet, nu hvor det havde mange så mange brugere som aldrig før. Her blev Amazon i
+            1994 lanceret som et af de allerførste webshops på nettet. Websteders antal blev ved med at stige, og
+            brugerne manglede nu en side hvor de kunne søge efter noget mere specifikt, for at kunne komme hen til den
+            rigtige hjemmeside. Det er under denne periode at Yahoo! kom på banen for brugerne. I 1996 blev Microsofts
+            browser Internet explorer, i version 3.0 lanceret. Dette ville starte browserkrigen mellem Microsoft og
+            Netscape. Måden Microsoft vandt på, var ved at installere browseren automatisk på brugernes nye computere,
+            således at de havde det tilgængeligt med det samme. Netscape blev hurtigt presset ud af markedet, og
+            Microsoft vandt i 2002 med at være på 96% på browsermarkedet.
+            <br>
+            I 1997 kom HTML-version 3.2 til verden, som gjorde det muligt at styre hjemmesidens baggrundsfarve.
+            Herudover så gjorde Netscape 2.0 på dette tidspunkt, det muligt at integrere grafiske knapper. Dette første
+            til et nyt område indenfor knapdesign.
             <hr>
-            <h4>Adjacent selector eksempel:</h4>
-            <img src="Billeder/Adjacent selector.png" id="tekst-img" alt="">
-            <span id="source-tekst">Denne type selector vælger det første < p> element i HTML’en som kommer lige efter
-                    < div> tagget. Alle andre < p> tags som kommer herefter blive ignoreret.</span>
+            <h4>Semantisk søgning ( 2000-2003):</h4>
+            Under denne periode mente eksperter at internettet ikke ville kunne klare årtusindskiftet. Hjemmesiderne var
+            langsomme om at loade, og ville gøre det svært for brugeren at fastholde begejstringen mens de var på
+            nettet. Det var her Google kom ind på banen med deres søgemaskine. Den var nemlig i stand til at filtrere
+            mange websteder, og give brugeren præcis de de ledte efter, gennem en algoritme ”Pagerank”. Denne
+            søgemaskine kunne tage brugeren med et klik, direkte hen til den ønskede hjemmeside. Pagerank, som også
+            betyder ”semantik” blev udviklet løbende, og fik hurtigt stor betydning for mange besøgende på Google. Ud af
+            dette udsprang der en industri for søgemaskineoptimering, eller ”SEO”. Google valgte derfor at lancere en
+            subgenre af søgemaskiner der omhandlede semantisk søgning.
             <hr>
-            <h4>General sibling selector eksempel:</h4>
-            <img src="Billeder/General sibling selector.png" id="tekst-img" alt="">
-            <span id="source-tekst">General sibling selectoren vælger i dette eksempel alle < p > tags som er søskende til
-                    < div > tags. Dvs. at her vil alle < p > tags som kommer efter < div > tags blive valgt.</span>
+            <h4>Det sociale web ( 2003-2010):</h4>
+            Det der for alvor skubbede det sociale web i gang, var begyndelsen af deling af små videoklip der gik
+            viralt, sjove billeder, beskeder osv. Det foregik bl.a. på YouTubes side, som blev skabt i 2005. Formålet
+            med siden var at kunne dele videoer med andre brugere. En video som gik viralt meget hurtigt som hed
+            ”Charlie bit my finger”, nåede hurtigt på de 800mio visninger, og gjorde YouTube til et godt eksempel på
+            brugergenereret indhold på et socialt medie. I 2007 kom det første mobile netværk, som blev opkaldt for
+            ”Twitter”. Det var skabt til at dele en sms-tekst på højst 140 karakter. I første omgang undrede man sig
+            over hvordan man kunne overhovedet skrive noget der ville give mening på så få karakter. Det viste sig dog
+            at det hurtigt blev noget meget populært bl.a. kendte og berømte, og trak selvfølgelig almene brugere med
+            sig ind på siden.
+            <hr>
+            <h4>Det sociale web (2010 -):</h4>
+            Det sociale web (2010 -):
+            Gennem Apples iPhone og iPad blev der introduceret en ny kategori af web-brugere, de mobile web-brugere. Den
+            revolutionære berøringsskærm gjorde det muligt at styre alt på de mobile enheder gennem et enkelt klik med
+            fingeren, på skærmen. Gennem det mobile netværk, åbnede der nye muligheder for navigation, og
+            tredjepartsprogrammer, gennem Apples ”Appstore”. Samme år valgte Google at lancere deres eget styresystem
+            som de kaldte for ”Android”, og fik meget hurtigt overtaget størstedelen af markedet, pga. at det var
+            billigere at købe en mobil/tablet med Android, end en mobil/tablet med iOS. Efter at nu mange brugere har
+            fået fat i en mobil løsning, så skulle man også samtidig finde en løsning til at præsentere hjemmesider på
+            en ny og kompakt måde, på den lille mobilskærm. Designet skulle være konsistent, men stadig dynamisk,
+            således at det kunne tilpasse sig, ligemeget hvilken skærm hjemmesiden måtte blive præsenteret på.
+
         </ul>
+
+        <h3>Mindmap</h3>
+        <ul>
+            En mindmap minder meget om brainstorming. Det er en notationsform som holder fast på sammenhængen mellem de
+            forskellige ord i mindmappet. Når man laver en mindmap så brainstormer man for at kunne finde på nye ord der
+            relaterer sig til emnet, eller allerede nedskrevne ord. En mindmap kan med fordel også bruges med
+            grafik/billeder og behøvest ikke kun at være tekst. Man kan bruge end mindmap til mange forskellige ting
+            såsom:
+
+            <li id="nested-list">
+                <ul id="ul-tekst-style">
+
+                    <b>
+
+                        <li id="li-tekst-style">Repitition</li>
+                        <li id="li-tekst-style">Overblik</li>
+                        <li id="li-tekst-style">Brainstorming</li>
+                        <li id="li-tekst-style">Sammenhæng</li>
+                        <li id="li-tekst-style">Struktur</li>
+                        <li id="li-tekst-style">Associationer</li>
+
+                    </b>
+                    <br>
+                    <br>
+
+
+
+                </ul>
+
+            </li>
+            <br>
+            Et eksempel på en mindmap kunne se sådan her ud:
+            <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/2pAPyoZ">Direkte Link til
+                        mindmap eksempel</a></b> </span>
+            <span id="source-tekst"> <b>Kilde: Lavet af Ahmad Azzam</b> </span>
+
+        </ul>
+
+
+        <h3>Server og Klient</h3>
+        <ul>
+            <h4>Server:</h4>
+            En server er essentielt en computer (server) der deler sit indhold og ressourcer med andre computer
+            (klienter). De mest hyppige slags servere som folk kender til, er dataservere, og filservere. Disse slags
+            servere holder på en mængde data/filer, som klienten så kan tilgå ved at sende en efterspørgsel til
+            serveren, hvorefter klienten får svar på at den efterspurgte data/fil kan tilgås eller ej. Det er muligt for
+            en computer at både være en server og en klient på samme tid. Her er nogle eksempler på forskellige slags
+            servere:
+
+            <li id="nested-list">
+                <ul id="ul-tekst-style">
+
+                    <b>
+
+                        <li id="li-tekst-style">Fil-server</li>
+                        <li id="li-tekst-style">Print-server</li>
+                        <li id="li-tekst-style">Web-server</li>
+                        <li id="li-tekst-style">Mail-server</li>
+                        <li id="li-tekst-style">FTP-server</li>
+
+                    </b>
+                    <br>
+                    <br>
+
+
+
+                </ul>
+
+            </li>
+            <br>
+            <h4>Klient:</h4>
+            En klient er en computer som bruges til at tilgå en server. Klienten kobler sig til serveren og udveksler
+            data med serveren. Et par eksempler på dette kan se således ud:
+
+            <li id="nested-list">
+                <ul id="ul-tekst-style">
+
+                    <b>
+
+                        <li id="li-tekst-style">- Webserver kommunikerer med en web-klient (webklienten kunne være en
+                            server)</li>
+                        <li id="li-tekst-style">- FTP-server kommunikerer med en FTP-klient (det kunne være eksempelvis
+                            et program)</li>
+                        <li id="li-tekst-style">- Print-server kommunikerer med en print-klient (print-klienten er en
+                            del af styresystemet og er normalt usynligt.)</li>
+
+                    </b>
+                    <br>
+                    <br>
+
+                </ul>
+
+            </li>
+            Klient/Server eksempel:
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Client-server-model.svg/1200px-Client-server-model.svg.png"
+                alt="">
+            <span id="source-tekst"> <b>Kilde:
+                    <a
+                        href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Client-server-model.svg/1200px-Client-server-model.svg.png">Klik
+                        her</a></b>
+            </span>
+
+        </ul>
+
 
     </section>
 
-
-    
-
+    <!-- Internettets historie, Mindmap, Server og Klient slut -->
 
 
 
