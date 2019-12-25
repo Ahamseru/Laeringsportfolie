@@ -47,16 +47,25 @@ body {
 /* Styling af grid på forsiden slut */
 
 
-/* Stlyng a billeder i på forsiden start */
+/* Stlyng a billeder start */
 img {
+
+    display: block;
+    max-width: 250px;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+}
+
+#frontpage-logo{
 
     display: block;
     max-width: 300px;
     margin: auto;
-
 }
 
-/* Stlyng a billeder i på forsiden slut */
+/* Stlyng a billeder slut */
 
 /* Styling af øverste logo start */
 .logo img {
@@ -73,9 +82,11 @@ header>section {
 
 /* Styling af banner billeder i teksten */
 .banner {
-    width: 100%;
+    max-width: 80%;
     margin: 0;
     max-width: 100%;
+    text-align: center;
+    display: inline;
 
 }
 
@@ -142,6 +153,8 @@ span {
 #source-tekst {
     font-style: italic;
     font-size: 0.8em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 /* Syling af tekst slut */
@@ -155,6 +168,7 @@ ul {
     overflow: auto;
     text-align: center;
     border-bottom: 1px solid black;
+    margin-bottom: 20px;
 }
 
 /* Styling af kilde links start */
@@ -213,6 +227,7 @@ section>ul {
     padding: 20px;
     text-align: justify;
     font-family: 'Heebo', sans-serif;
+    
     
 }
 
@@ -294,6 +309,8 @@ ul:not(#ul-tekst-style) {
     overflow: hidden;
     text-align: center;
     transition: max-height 0.2s ease-out;
+    border-radius: 20px;
+    clear: both;
 }
 
 .active {
@@ -303,10 +320,6 @@ ul:not(#ul-tekst-style) {
 }
 
 /* Styling af collapsible bokse slut */
-
-
-
-
 
 
 
@@ -327,3 +340,27 @@ footer {
 }
 
 /* Styling af footer slut */
+
+/* Styling af desktop start */
+
+@media screen and (min-width: 1000px) {
+
+.collapsible{
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2em;
+    
+}
+
+.content{
+    
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+}
+
+
+
+/* Styling af desktop slut */

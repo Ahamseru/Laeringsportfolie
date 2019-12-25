@@ -25,7 +25,7 @@
 
                 </li>
 
-                <li id="menu-list" class="dropdown"><a href="HTML_CSS_Layout.html">HTML CSS og Layout</a>
+                <li id="menu-list" class="dropdown"><a href="HTML_CSS_Layout.html">HTML, CSS, Layout og Foto</a>
 
                 </li>
 
@@ -123,6 +123,8 @@
     <section class="content">
         <h3>CSS</h3>
         <img src="Billeder/CSS banner.png" class="banner" alt="">
+        <br>
+        <br>
         <ul>
             CSS står for ”Cascading Style Sheets”, og er det computersprog der bruges til at style alt HTML. Hvis HTML
             er skelettet på hjemmesiden, så er CSS’en huden, øjnene, ørene, munden, hovedet, armene, benene osv.
@@ -168,8 +170,7 @@
         <p>
             <img src="Billeder/Attributter.png" id="tekst-img" alt="">
             <span id="source-tekst"> <b>Kilde: Intro til HTML.pdf (side 12)</b> </span>
-            <br>
-            <br>
+
             Attributter giver HTML elementer noget at relatere til. Dvs. at man nu kan nemmere, mere
             specifikt pege på hvilket element det er man snakker om. Man kan give et element en attribut
             som kunne eksempelvis være et ID, eller en klasse. En attribut består af to dele, et
@@ -179,10 +180,9 @@
             <br>
             <br>
             Eksempel:
-            <br>
-            <br>
+
             <img src="Billeder/Attribut eksemepl.png" id="tekst-img" alt="">
-            <br>
+
             <span id="source-tekst"> Her er attributnavnet <b>”style”</b> og attributværdien
                 <b>"color:red".
 
@@ -398,12 +398,10 @@
                                 Links i HTML koden fungere på den måde at man skriver hvad der skal være klikbart
                                 imellem to
                                 < a> tags, det kunne f.eks. se sådan her ud:
-                                    <br>
-                                    <br>
+
                                     <img src="Billeder/Links.jpg" id="tekst-img" alt="">
                                     <span id="source-tekst"> <b>Kilde Intro til HTML.pdf (side 23)</b> </span>
-                                    <br>
-                                    <br>
+
                                     Her er “< a>” tagget starten og ”< /a>” slutningen af elementet. Den røde tekst, er
                                             den hjemmeside som man bliver taget til når man klikker på linket, mens den
                                             grønne tekst er linkets navn (det man faktisk ser på hjemmesiden som blå
@@ -437,7 +435,7 @@
             <br>
             <br>
             <h4>Element selector eksempel:</h4>
-            <br>
+
             <img src="Billeder/Element selector.png" id="tekst-img" alt="">
             <span id="source-tekst">Her er elementet ”p” valgt i CSS’en, og vil nu derfor style alt der har tagget < p>
                     i HTML’en. Dette
@@ -622,10 +620,9 @@
 
 
                 </ul>
-                <br>
-                <br>
+
                 <img src="Billeder/Box model.jpg" alt="">
-                <br>
+
                 <span id="source-tekst"> <b>Kilde: Intro til CSS.pdf (side 23)</b> </span>
 
             </li>
@@ -662,7 +659,7 @@
                 Den øverste måde at skrive farver på i CSS (RGB), fungere på samme måde som det lyder. RGB står får
                 ”Red, Green, Blue”, og hver af de tre værdier kan gå fra 0-255. Jo højere et nummer, jo mere mæthed i
                 farven. Den første værdi er rød, den anden grøn, og den tredje blå.
-                <br>
+
                 <img src="Billeder/RGB calculator.PNG" alt="">
                 <span id="source-tekst"> Man kan bruge en RGB calculator på w3school’s hjemmeside </span>
                 <span id="source-tekst"> <b>Kilde: <a href="https://www.w3schools.com/colors/colors_rgb.asp/">Klik
@@ -860,8 +857,7 @@
                 <b>Master branch</b> – hovedgrenen i versionstyringen, og er den endelige version af koden. Man skal kun
                 merge,
                 hvis man er sikker på at det ikke vil få konflikter, og man har fået testet alt hvad man vil teste af.
-                <br>
-                <br>
+
                 <img src="/Billeder/Git flow.png" alt="">
                 <span id="source-tekst"> Eksempel på et git flow </span>
                 <span id="source-tekst"> <b>Kilde: Lavet af Ahmad Azzam</b> </span>
@@ -879,9 +875,10 @@
 
 
     </section>
-    <!-- Layout og Design start -->
-    <button type="button" class="collapsible">Layout</button>
+    <!-- Layout, Grids, og Informationsarkitektur start -->
+    <button type="button" class="collapsible">Layout, Grids, og Informationsarkitektur</button>
     <section class="content">
+        <!-- Layout start -->
         <h3>Layout</h3>
         <ul>
             At kunne designe en hjemmeside er ikke bare noget man lige gør over en dag eller to, det handler om meget
@@ -929,8 +926,7 @@
             <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/u9H656Z">Direkte Link til
                         "Static" layout eksempel</a></b> </span>
             <span id="source-tekst"> <b>Kilde: Responsive i praksis.pdf (side 6)</b> </span>
-            <br>
-            <br>
+            <hr>
             Flydende webdesign er meget mere tilpassende idet at det selv tilpasser sig til bredden, og man angiver
             samtidigt bredder hyppigt i procenter. Her kan elementer blive meget små og smalle og der er samtidigt
             grænser for hvor småt disse elementer kan gå. Et fluid webdesign bliver normalt valgt
@@ -941,8 +937,7 @@
             <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/uHmqqnE">Direkte Link til
                         "Liquid" layout eksempel</a></b> </span>
             <span id="source-tekst"> <b>Kilde: Responsive i praksis.pdf (side 8)</b> </span>
-            <br>
-            <br>
+            <hr>
             Det responsive layout består meget typisk af et fluid layout, herunder samtidigt under en række regler som
             ændrer på skærmbredden afhængigt af hvilken enhed man som bruger er på. Her bliver der gjort brug af ”media
             quieries” (@media) i CSS, og det er altid samme HTML og CSS-filer uanset hvilken enhed der bliver brugt. Det
@@ -956,6 +951,7 @@
             <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/NI8XD3w">Direkte Link til
                         "Responsive" layout eksempel</a></b> </span>
             <span id="source-tekst"> <b>Kilde: Responsive i praksis.pdf (side 10)</b> </span>
+            <hr>
             <br>
             <br>
             Det adaptive layout er noget der ligger imellem en statisk og en responsiv tilgang. Består selv af en række
@@ -971,11 +967,265 @@
             <span id="source-tekst"> <b>Kilde: Responsive i praksis.pdf (side 10)</b> </span>
             <br>
             <br>
+
+
+        </ul>
+        <!-- Layout start -->
+
+        <!-- Grids start -->
+        <h3>Grids</h3>
+        <ul>
+            Grids bruges til at opsætte hjemmesiden således at elementerne er fordelt på den måde som man egentlig vil
+            have. Grids indeholder både rækker og kolonner som man kan udfylde med plads, og man kan samtidig fortælle
+            CSS’en hvor meget plads et element skal fylde, gennem disse rækker og kolonner. Grids bygger videre på
+            flexbox (et-dimensionelt), som ellers ligner grids rigtig meget, men hvor, flexbox i stedet er indhold
+            baseret, så er grids container baseret. Grunden til at man bruger grids i dag, er fordi at der aldrig rigtig
+            har været en god måde at opsætte sin side på før. Funktioner som float og clear, har været alt for
+            vanskelige at gøre med, og har stort set været ”trial and error”, hele vejen igennem. Før i tiden skulle man
+            selv specificere stort set alt, der var meget mere fokus på elementerne selv, i stedet for positioneringen
+            af dem. I dag kan grid systemet, selv udregne bredden af elementerne i hver celle.
+            <br>
+            <br>
+            Vi skulle som øvelse på klassen prøve at sortere, otte rækker således at de så ud som slutresultatet vi fik
+            fra Niels. Her er de otte rækker usorteret:
+
+            <img src="Billeder/grids-unsorted.jpg" alt="">
+            <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/Zq5kwqU">Direkte Link til
+                        unsorted grid eksempel</a></b> </span>
+            <span id="source-tekst"> <b>Kilde: Grids2.pdf (side 9)</b> </span>
+
+            Og her er rækkerne igen, men sorteret og farvet som de skulle være (af mig):
+
+            <img src="Billeder/grids-sorted.PNG" alt="">
+            <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/Zq5kwqU">Direkte Link til
+                        sorted grid eksempel</a></b> </span>
+            <span id="source-tekst"> <b>Kilde: Grids2.pdf (side 9)</b> </span>
+
+            Måden man definerer et grid på er at man udvælger et element som eksempelvis ”< section>” og bruger det som
+                en ”container”. Heri skriver man ”display: grid;”. Nu er dette element klar til at vise sit grid, når vi
+                får det udfyldt med elementer. Indtil videre hjemmesiden og dets layout ikke være ændret.
+
+                <img src="Billeder/display grid.PNG" alt="">
+                <span id="source-tekst"> I dette eksempel udvælges elementet med klassen ”grid-container” til at være
+                    vores grid skelet </span>
+                <span id="source-tekst">
+                    <b>Kilde: <a href=" https://www.w3schools.com/">Klik her</a></b>
+                </span>
+
+                Herfra skal vi til at angive kolonnerne og definere dem således at hjemmesiden ved, hvor mange og hvor
+                bredde vores kolonner skal være. Dette gøres eksempelvis på denne måde:
+                <img src="Billeder/grid-template columns.jpg" alt="">
+                <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/fvQ8n0V">Direkte Link til
+                            grid-template-column CSS eksempel</a></b> </span>
+                <span id="source-tekst"> <b>Kilde: Grids2.pdf (side 14)</b> </span>
+
+                <img src="Billeder/grid-template columns (eksempel).jpg" alt="">
+                <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/Ze3P3UM">Direkte Link til
+                            grid-template-column eksempel</a></b> </span>
+                <span id="source-tekst"> <b>Kilde: Grids2.pdf (side 14)</b> </span>
+                Hvor antallet af input efter kolon definerer hvor mange kolonner vi skal have (en kolonne med 1fr og
+                henholdsvis 3fr i størrelse, alt i alt to kolonner). Her betyder ”fr”, ”fractions”, eller ”dele”, og
+                definerer hvor meget plads en kolonne skal have. Ønsker vi flere kolonner en disse to, så tilføjer vi en
+                ekstra ”fr” for at introducerer en kolonne mere. Skulle antallet af elementer ikke gå op, vil griddet
+                selv introducerer en ny rækker, hvor de resterende elementer kan stå i stedet. Der kan også på samme
+                måde angives hvor mange rækker man vil have, og hvor store de skal være. Et eksempel på dette kunne se
+                sådan ud:
+                <img src="Billeder/grid-template rows.jpg" alt="">
+                <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/ZmpXnzx">Direkte Link til
+                            grid-template-row CSS eksempel</a></b> </span>
+                <span id="source-tekst"> <b>Kilde: Grids2.pdf (side 16)</b> </span>
+                Hvor griddet vil ændre sig til at se sådan her ud i stedet for:
+                <img src="Billeder/grid-template rows (eksempel).jpg" alt="">
+                <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/kqb7kFP">Direkte Link til
+                            grid-template-row eksempel</a></b> </span>
+                <span id="source-tekst"> <b>Kilde: Grids2.pdf (side 16)</b> </span>
+                Herudover er set også muligt at definerer hvor meget en kolonne skal spænde over. Man kan altså definere
+                en ”grid-column start:” og en ”grid-column-end:”, hvor numrene indtastet efter hvert eksempel, vil være
+                den linje i kolonnen man starter fra, og slutter på henholdsvis.
+                <img src="Billeder/grid-column-start og grid-column-end.jpg" alt="">
+                <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/TMk0RVW">Direkte Link til
+                            grid-column-start og grid-column-end CSS eksempel</a></b> </span>
+                <span id="source-tekst"> <b>Kilde: Grids2.pdf (side 19)</b> </span>
+                Og vil få griddet til at se sådan her ud i stedet:
+                <img src="Billeder/grid-column-start og grid-column-end (eksempel).jpg" alt="">
+                <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/QPmolll">Direkte Link til
+                            grid-column-start og grid-column-end eksempel</a></b> </span>
+                <span id="source-tekst"> <b>Kilde: Grids2.pdf (side 19)</b> </span>
+                Dette kan selvfølgelig også gøre med rækkerne hvor man i stedet skriver ”grid-row-start:” og
+                ”grid-row-end:”.
+                <br>
+                <br>
+                Alt i alt så er griddet bare meget nemmere når det kommer til struktur, og der er herudover også meget
+                nemt at vedligeholde. Det anvender også navngivning af grid-elementer, og er derfor også nemt at
+                definere og opsætte. Et eksempel på navngivningen af de forskellige elementer kunne se sådan her ud:
+                <img src="Billeder/grid-area template.jpg" alt="">
+                <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/PWX8IiF">Direkte Link til
+                            grid-template-area CSS eksempel</a></b> </span>
+                <span id="source-tekst"> <b>Kilde: Grids2.pdf (side 28)</b> </span>
+                Hvor ”grid-template-areas” definerer hvor meget et element, som har det givne bogstav skal fylde i
+                griddet (både i rækker og kolonner). Det er også muligt at lade et felt i griddet stå tomt ved at
+                indstaste et ”.” i stedet for et bogstav.
+                <br>
+                <br>
+                Ud fra dette eksempel:
+                <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/DQ3y9ku">Direkte Link til
+                            grid-template-area CSS eksempel</a></b> </span>
+                <span id="source-tekst"> <b>Kilde: Grids2.pdf (side 27)</b> </span>
+                <br>
+                <br>
+                Så vil griddet komme til at se sådan her ud i stedet for:
+                <img src="Billeder/grid-area template.jpg" alt="">
+                <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/H11YHCh">Direkte Link til
+                            grid-template-area eksempel</a></b> </span>
+                <span id="source-tekst"> <b>Kilde: Grids2.pdf (side 28)</b> </span>
+
+        </ul>
+        <!-- Grids slut -->
+
+        <!-- Informationsarkitektur start -->
+        <h3>Informationsarkitektur</h3>
+        <ul>
+            Informationsarkitektur eller "IA", omhandler organisering og strukturering af information om et produkt
+            eller service. Meningen med informationsarkitektur er at hjælpe brugeren med at finde sit mål, hurtigt og
+            effektivt på en hjemmeside. Det er meget vigtigt at forstår at IA ikke er grafisk design, og skal faktisk
+            overvejes før man overhovedet begynder med at designe et website.
+            <br>
+            <br>
+            <span id="source-tekst">"Good information architecture enables people to find and do what they came for.
+                Great information
+                architecture takes find out of the equation: The site behaves as the visitor expects. Poor or missing
+                information architecture neuters content, design, and programming and devalues the site for its owners
+                as
+                well as the audience it was created to serve. It's like a film with no director. The actors may be good,
+                the
+                sets may be lovely, but audiences will leave soon after the opening credits."
+                - <b>Jeffrey Zeldman (stifter af A List Apart)</b>
+            </span>
+            En klassisk måde at organisere information på, er gennem ”LATCH” metoden, som står for følgende:
+            <li id="nested-list">
+
+                <ul id="ul-tekst-style">
+
+
+
+                    <li id="li-tekst-style"><b>L</b>ocation)</li>
+                    <li id="li-tekst-style"><b>A</b>lphabet</li>
+                    <li id="li-tekst-style"><b>T</b>ime</li>
+                    <li id="li-tekst-style"><b>C</b>ategory</li>
+                    <li id="li-tekst-style"><b>H</b>ierarchy</li>
+
+
+                    <br>
+                    <br>
+
+                    <span id="source-tekst">Denne type organisering er oprindeligt inddelt af Saul Wurman.</span>
+
+                </ul>
+
+
+            </li>
+
+            At prøve og organisere noget ud fra tilfældighed, er ikke en organiseringsmetode!
+            <br>
+            <br>
+            Eksempel på Location:
+            <img src="Billeder/Location.jpg" alt="">
+            <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/A49aB4L">Direkte Link til
+                        Location eksempel</a></b> </span>
+            <span id="source-tekst"> <b>Kilde: informationsarkitektur.pdf (side 11)</b> </span>
+            Eksempel på Alphabet:
+            <img src="Billeder/Alphabet.jpg" alt="">
+            <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/DrMHCfj">Direkte Link til
+                        Alphabet eksempel</a></b> </span>
+            <span id="source-tekst"> <b>Kilde: informationsarkitektur.pdf (side 15)</b> </span>
+            Eksempel på Time:
+            <img src="Billeder/Time.jpg" alt="">
+            <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/VcT9HKv">Direkte Link til
+                        Time eksempel</a></b> </span>
+            <span id="source-tekst"> <b>Kilde: informationsarkitektur.pdf (side 19)</b> </span>
+            Eksempel på Category:
+            <img src="Billeder/Category.jpg" alt="">
+            <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/xrP2zxu">Direkte Link til
+                        Category eksempel</a></b> </span>
+            <span id="source-tekst"> <b>Kilde: informationsarkitektur.pdf (side 25)</b> </span>
+            Eksempel på Hierarchy:
+            <img src="Billeder/Hierarchy.jpg" alt="">
+            <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/3n6nT9G">Direkte Link til
+                        Hierarchy eksempel</a></b> </span>
+            <span id="source-tekst"> <b>Kilde: informationsarkitektur.pdf (side 28)</b> </span>
+            <hr>
+            <h4>Gangstertesten</h4>
+            Typiske teknikker og metoder man kan bruge til at teste, om man har fået lavet en god IA, er ved at
+            eksempelvis køre "gangstertesten" Gangstertesten går ud på at man skal forestille sig at man ligger i et
+            bagagerum, hvorefter man bliver løsladt af gangsterne, for så at kunne finde vejen, hjem eller til et andet
+            sted man gerne vil hen. På denne måde kan man teste kvaliteten af IA og navigeringen på siden. I praksis så
+            kunne man vælge en hvilken som helst tilfældig side, med et tilfældigt produkt, og derfra orientere sig på
+            følgende:
+
+            <li id="nested-list">
+
+                <ul id="ul-tekst-style">
+
+                    <li id="li-tekst-style">Hvor er jeg henne på siden?</li>
+                    <li id="li-tekst-style">Hvordan kommer jeg til forsiden?</li>
+                    <li id="li-tekst-style">Er der hovedsektioner?</li>
+                    <li id="li-tekst-style">Søgning (hvor og hvad kan jeg søge på?)</li>
+                    <li id="li-tekst-style">Eventuelt en ”Du er her” indikator?</li>
+
+                </ul>
+
+
+            </li>
+
+            Dette er også kendt som <i>kortlægning</i>. Herudover så ville det være meget godt hvis der var en eller
+            anden form
+            for <i>mærkning</i>. Der burde altid være labels og skiltning som kan hjælpe brugeren med at identificere
+            sin
+            position på hjemmesiden. Knapper, ikoner, banners mm. er alt sammen med til at vej vise brugeren og give et
+            hurtigt overblik på hvor man er, og hvor man gerne vil hen.
+            <br>
+            <br>
+            Når man snakker om IA, så vil man også komme ind omkring flows og flowcharts. Et flow, eller et flowchart er
+            et diagram der visualiserer hvordan en bruger af et system, vil navigere rundt, og udføre forskellige
+            opgaver. Et flowchart er opbygget af tre elementer:
+            <li id="nested-list">
+
+                <ul id="ul-tekst-style">
+
+                    <li id="li-tekst-style"><b>Trin</b>: Her vil brugeren allerede være i gang med sit flow, og et trin
+                        kunne
+                        eksempelvis være et informativt trin. Dette kunne være når der udveksles information til
+                        brugeren eller når systemet vælger at svare tilbage på en brugerhenvendelse. Udfyldning af en
+                        formular kunne være et eksempel under dette element.</li>
+                    <li id="li-tekst-style"><b>Veje</b>: er med til at beskrive processens retning og illustreres med
+                        pile.</li>
+                    <li id="li-tekst-style"><b>Beslutninger</b>: Her er det brugerens tur til at tage et valg der vil
+                        være
+                        med til at afgøre hvilken vej processen skal fortsætte i. Her er beslutninger illustreret typisk
+                        med ja/nej spørgsmål.</li>
+
+                </ul>
+
+
+            </li>
+            <img src="Billeder/flowchart.jpeg" alt="">
+            <span id="source-tekst"> <b> <a id="direct-img"
+                        href="https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/examples/flowchart-templates/user-flowchart-template.jpeg">Direkte
+                        Link til
+                        flowchart eksempel</a></b> </span>
+            <hr>
+            Herudover så er det også muligt at designe wireframes. Wireframes er skabeloner med minimale detaljer af
+            hver side, på hele hjemmesiden. Den viser meget enkelt, hvad der er på hver side, og hvad der er muligt at
+            interagerer med på siden. Et eksempel på et wireframe for en forside (min forside som eksemepl) kunne se
+            sådan her ud:
+            <img src="Wireframes/Forside.png" alt="">
+            <span id="source-tekst"> <b>Kilde: Lavet af Ahmad Azzam</b> </span>
         </ul>
 
-
     </section>
-    <!-- Layout og Design slut -->
+    <!-- Informationsarkitektur slut -->
+
+    <!-- Layout, Grids, og Informationsarkitektur slut -->
 
     <!-- Internettets historie, Mindmap, Server og Klient start -->
     <button type="button" class="collapsible">Internettets historie, Mindmap, Server og Klient</button>
@@ -1190,9 +1440,102 @@
     <!-- Internettets historie, Mindmap, Server og Klient slut -->
 
 
+    <!-- Fotografering start -->
+    <button type="button" class="collapsible">Fotografering</button>
+    <section class="content">
+        <h3>Fotografering</h3>
+        <ul>
 
+            Et foto eller et fotografi kommer af de græske ord for at skrive/tegne. Et foto kan i dag tages med et
+            kamera (professionelt), eller en mobil (amatør/professionelt.) Hvis man vil have gode billeder, så vil man
+            nok også i de fleste tilfælde vælge et ordentligt kamera over noget som en mobil eller et engangskamera. For
+            at kunne tage et ordentligt og godt billede har man først og fremmest brug for et kamera. Kameraerne i dag
+            variere meget i alt fra lukketid til dybdeskarphed, ISO osv.
+            <br>
+            <br>
+            <h4>Objektiver og brændvidde:</h4>
+            Et objektiv er den linse man kan skrue på, foran på kameraet. Den er med til at bestemme brændvidden på det
+            billede man tager. Brændvidden bestemmer hvor stort et udsnit af billedet man får med. Brændvidden betegnes
+            i millimeter og et traditionelt normalobjektiv i kamera verdenen ligger på de 50mm. Jo større brændvidde jo
+            mere snævert og smallere bliver billedet, men man kan til gengæld også zoome meget ind og fokusere på ét
+            objekt. Jo mindre brændvidde, jo mere får man med på billedet, og man kan tage store og bredde billeder som
+            dækker rigtig meget.
+            <img src="Billeder/Brændvidde.jpg" alt="">
+            <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/kKIXULm">Direkte Link til
+                        brændvidde eksempel</a></b> </span>
+            <span id="source-tekst"> <b>Kilde: intro til fotografering.pdf (side 7)</b> </span>
+            <h4>Lukker:</h4>
+            Et kamera har også en ”lukker”. Denne lukker har også en ”lukkertid”, som er med til at bestemme hvor skarpt
+            et billede bliver, når man tager det. Jo længere tid lukkeren er åben desto længere tid har lyset til at
+            komme ind på billedet, og desto mere bevægelsessløring og rystelser bliver opfanget i billedet. Hvis
+            lukkertiden er meget hurtig, har lyset mindre tid til at bliver opfanget på billedet, og billedet udstår
+            også mere skarpt, og stillestående.
+            <img src="Billeder/Lukkertid.jpg" alt="">
+            <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/Cc01zCC">Direkte Link til
+                        lukkertid eksempel</a></b> </span>
+            <span id="source-tekst"> <b>Kilde: intro til fotografering.pdf (side 10)</b> </span>
+            <br>
+            Her er et eksempel på en lang eksponering:
+            <img src="Billeder/Lang eksponering.jpg" alt="">
+            <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/pynEw5e">Direkte Link til
+                        lang eksponering eksempel</a></b> </span>
+            <span id="source-tekst"> <b>Kilde: intro til fotografering.pdf (side 11)</b> </span>
+            <br>
+            Og her er et eksempel på en hurtig eksponering:
+            <img src="Billeder/Hurtig eksponering.jpg" alt="">
+            <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/SaP6wYf">Direkte Link til
+                        hurtig eksponering eksempel</a></b> </span>
+            <span id="source-tekst"> <b>Kilde: intro til fotografering.pdf (side 12)</b> </span>
+            <br>
+            <h4>Blænde:</h4>
+            Blænden i kameraet bestemmer hvor meget lys der bliver opfanget når billedet bliver taget. Den har derfor
+            den rolle om at bestemme hvor kontras fyldigt et, og hvor skarp en dybde man får på billedet. Dette kaldes
+            også for en dybdeskarphed. Et eksempel på nogle blændetal kunne se sådan her ud, alt efter hvor står
+            åbningen i blænden er:
+            <img src="billeder/Blænde.jpg" alt="">
+            <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/Ci12eof">Direkte Link til
+                        blænde eksempel</a></b> </span>
+            <span id="source-tekst"> <b>Kilde: intro til fotografering.pdf (side 13)</b> </span>
+            <br>
+            Her er et eksempel med et højt blændetal (f22):
+            <img src="Billeder/Højt blændetal.jpg" alt="">
+            <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/Ya07Gft">Direkte Link til
+                        højt blændetal eksempel</a></b> </span>
+            <span id="source-tekst"> <b>Kilde: intro til fotografering.pdf (side 14)</b> </span>
+            <br>
+            Og her er et eksempel med et lavt blændetal (f2.8):
+            <img src="Billeder/Lavt blændetal.jpg" alt="">
+            <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/TWJCG6v">Direkte Link til
+                        lavt blændetal eksempel</a></b> </span>
+            <span id="source-tekst"> <b>Kilde: intro til fotografering.pdf (side 15)</b> </span>
+            <h4>ISO:</h4>
+            Kameraets lysfølsomhed bestemmes af en knap på digitalkameraet der hedder ”ISO”. ISO bestemmer hvor
+            lysfølsom kameraet skal være, og dermed hvor lysfølsom billedet der skal fremkaldes også være. Jo højere en
+            ISO jo mere lysfølsom er kameraet, og desto mere ”støj” får man også med på billedet, i form af mange
+            prikker (korn).
+            <br>
+            <br>
+            Eksempel på ISO:
+            <img src="Billeder/ISO.jpg" alt="">
+            <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/VZbOoou">Direkte Link til
+                        ISO eksempel</a></b> </span>
+            <span id="source-tekst"> <b>Kilde: intro til fotografering.pdf (side 17)</b> </span>
+            Man kan hermed sige at man skal indstille sit kamera efter ønskede ISO, blænde, og lukkertid, så man får det
+            bedste resultat som muligt. For at kunne få et ikke bearbejdet billede således at man selv kan indstille de
+            tre forskellige værdier, så skal man sætte kameraet til at tage billeder i ”RAW”-format. Skulle man lade det
+            op til kameraet så vil man få et ”lossy” JPEG-format, med meget støj i billedet. Dette er fordi man lader
+            ISO, blænde, og lukkertid være helt op til kameraets automatiske system. Herudover kan man dirigere det
+            ønskede resultat yderligere ved at bringe sit eget lys meget. Lyslægning kan ændre opfattelsen af billedet
+            fuldstændig alt efter hvordan man vælger at bruge det. Her er et eksempel på hårdt vs. Blødt lys:
+            <img src="Billeder/Hårdt-blødt lys.jpg" alt="">
+            <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/NlmqMLZ">Direkte Link til
+                        hårdt/blødt lys eksempel</a></b> </span>
+            <span id="source-tekst"> <b>Kilde: intro til fotografering.pdf (side 21)</b> </span>
 
+        </ul>
 
+    </section>
+    <!-- Fotografering slut -->
 
 
     <!-- Til top knap start -->
