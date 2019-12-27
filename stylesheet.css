@@ -119,6 +119,14 @@ h4 {
 
 }
 
+h3{
+    text-align: center;
+}
+
+h4{
+    margin-top: 0;
+}
+
 
 h3:not(:first-child) {
     margin-top: 3em;
