@@ -4,7 +4,6 @@ html {
 
 body {
     margin: 0;
-    /* background-color: rgb(85, 83, 83); */
     background-color: #333;
 
 }
@@ -26,7 +25,7 @@ body {
 
 #HCL {
     grid-area: HCL;
-  
+
 }
 
 #Design {
@@ -45,7 +44,7 @@ body {
     grid-area: Kilder;
 }
 
-.front-page-container{
+.front-page-container {
     border-top: 1px solid black;
 }
 
@@ -58,12 +57,12 @@ img {
     display: block;
     max-width: 250px;
     margin: auto;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 
 }
 
-#frontpage-logo{
+#frontpage-logo {
 
     display: block;
     max-width: 300px;
@@ -113,7 +112,7 @@ h1 {
 }
 
 /* Styling af headers start */
-h2{
+h2 {
     font-family: 'Dosis', sans-serif;
     color: #a1551b;
     font-size: 2em;
@@ -126,11 +125,11 @@ h4 {
 
 }
 
-h3{
+h3 {
     text-align: center;
 }
 
-h4{
+h4 {
     margin-top: 0;
 }
 
@@ -139,9 +138,9 @@ h3:not(:first-child) {
     margin-top: 3em;
 }
 
-section>ul>h5{
+section>ul>h5 {
     font-size: 1.5em;
-    font-family: 'Kanit' sans-serif;
+    font-family: 'Kanit'sans-serif;
 
 }
 
@@ -184,7 +183,13 @@ ul {
     text-align: center;
     border-bottom: 1px solid black;
     margin-bottom: 20px;
+    
 }
+
+section>ul{
+    margin-top: 20px;
+}
+
 
 /* Styling af kilde links start */
 
@@ -219,6 +224,7 @@ li a,
     padding: 14px 16px;
     text-decoration: none;
     font-family: 'Fugaz One', cursive;
+    font-size: 0.8em;
 }
 
 /* Styling af menu text knapper start*/
@@ -242,14 +248,14 @@ section>ul {
     padding: 20px;
     text-align: justify;
     font-family: 'Heebo', sans-serif;
-    
-    
+
+
 }
 
 section>ul>li {
     padding: 1em;
-   
-    
+
+
 }
 
 ul:not(#ul-tekst-style) {
@@ -273,7 +279,7 @@ ul:not(#ul-tekst-style) {
 #li-tekst-style {
     margin-top: 1em;
     list-style-type: none;
-    
+
 }
 
 
@@ -351,6 +357,7 @@ footer {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     font-family: 'Fugaz One', cursive;
+    font-size: 0.8em;
 
 }
 
@@ -360,22 +367,41 @@ footer {
 
 @media screen and (min-width: 1000px) {
 
-.collapsible{
-    width: 40%;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 2em;
-    
+    img {
+
+        display: block;
+        width: 100%;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+
+    }
+
+
+    .collapsible {
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-top: 2em;
+
+    }
+
+    .content {
+
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    li a,
+    .dropbtn {
+
+        font-size: 1em;
+    }
+
+    footer {
+
+        font-size: 1em;
+    }
+
 }
-
-.content{
-    
-    margin-left: 30%;
-    margin-right: 30%;
-}
-
-}
-
-
 
 /* Styling af desktop slut */
