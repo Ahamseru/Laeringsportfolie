@@ -196,13 +196,199 @@
 
     </section>
 
-
+        <!-- Typografi start -->
     <button type="button" class="collapsible">Typografi</button>
     <section class="content">
         <ul>
-            
+            Hvad er typografi egentlig? Typografi er IKKE kun skrifttypen på en tekst men derimod fonte, kolonner,
+            læsbarhed, layout, billeder og logoer. Typografi er kunsten i at kunne vælge den skriftstil, på den rigtige
+            hjemmeside, til læseren. Det er at kunne determinere hvorfor netop det er <b>den</b> skrifttype man har
+            valgt. Alt
+            efter hvilken skrifttype man har valg, og hvordan hvert bogstavs strøg er blevet brugt, så kan det få kæmpe
+            betydning for forståelsen , i en given kontekst. Her er en simpel illustration af hvad fonte, og andre
+            styles gør ved teksten:
+            <img src="Billeder/typografi.jpg" alt="">
+            <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/Fpfgmis">Direkte Link til
+                        typografi eksempel</a></b> </span>
+            <span id="source-tekst">
+                <b>Kilde: <a href="https://www.webfx.com/blog/web-design/the-basics-of-typography/">Klik her</a></b>
+            </span>
+            Det er det at man bare kan skifte en lille ting, for så at kunne næsten ændre mening og/eller perspektiv
+            over teksten. Man har derfor en vis mængde kontrol over hvordan læseren skal opfatte teksten. Det er det der
+            gør typografi til et af designerens mest værdifulde værktøj.
+
+            <hr>
+
+            <h4>Fontanatomi:</h4>
+            En linje med bogstaver har mindst fem linjer de forholder sig til når man skriver:
+            <li id="nested-list">
+
+                <ul id="ul-tekst-style">
+
+                    <li id="li-tekst-style"><b>Baseline: </b> det er den linje som hele teksten sidder på</li>
+                    <li id="li-tekst-style"><b>Cap height (eller cap line): </b> det er det højeste punkt på de store
+                        bogstaver</li>
+                    <li id="li-tekst-style"><b>Ascender height (eller topline): </b> det er denne linje der viser hvor
+                        et bogstav (majuskler) som h, eller k rører deres højeste punkt. Faktisk så er den her linje
+                        lige en tand højere end det højeste punkt på de store bogstaver (Cap height).
+                    </li>
+                    <li id="li-tekst-style"><b>X-height (eller midline): </b>denne linje viser hvor højden af små
+                        bogstaver (minuskler) går til, og (det ligger også i navnet) måles med bogstavet ”x”.</li>
+                    <li id="li-tekst-style"><b>Descender height (eller beardline): </b>det er de bogstaver som går
+                        under baseline (bogstaver som p eller y), og viser hvor bunden af disse bogstaver ligger.</li>
+
+                </ul>
+
+
+            </li>
+            <hr>
+            <h4>Typeface:</h4>
+            Når der snakkes om typefaces, så skal vi dykke ned i en skrifttype familie først. Under denne skrifttype
+            findes der ”weights”. Disse weights er med til at bestemme om skrifttypen er fed, kursiv, normal, eller
+            noget helt andet. Et typeface af en skrifttype familie, er samlingen af disse weights.
+
+            <hr>
+
+            <h4>Leading:</h4>
+            Leading er med til at beskrive mellemrummet mellem to linjer tekst. Det er også kendt som ”line-height” i
+            CSS, og kan måles ved at først få fat i to baselines. Leading er stærkt stykke værktøj, idet det kan
+            bestemme hvor læsbar en tekst bliver. Jo mindre en leading jo tættere står linjerne op ad hinanden, og man
+            vil sandsynligvis som læser, næsten begynde at føle sig kvalt. Jo mere whitespace mellem linjerne, jo mere
+            vil man som læser, føle at man har god luft til at læse. Dog kan det sagtens blive for meget af det ene
+            eller det andet. En general regel er at jo flere store ord man har på en linke, jo mere leading skal man
+            bruge. Derudover så skal man også forhøje leading hvis mellemrummet mellem bogstaver er stort. Jo mere
+            mellemrum mellem bogstaverne, jo mere skal man forhøje leading. Eksempel på leading:
+
+            <img src="Billeder/leading.jpg" alt="">
+
+            <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/TpLvyLY">Direkte Link til
+                        leading eksempel</a></b> </span>
+            <span id="source-tekst">
+                <b>Kilde: <a href="https://www.webfx.com/blog/web-design/the-basics-of-typography/">Klik her</a></b>
+            </span>
+
+            <li id="nested-list">
+
+                <ul id="ul-tekst-style">
+
+                    <li id="li-tekst-style"><b>Eksempel 1: </b> her er leading sat til at være en værdi der er i minus
+                        (en værdi der er mindre end skriftstørrelsen). Man kan se bogstaverne røre hinanden fra linje
+                        til linje, og dette vil selvfølgelig påvirke læsbarheden.</li>
+                    <li id="li-tekst-style"><b>Eksempel 2: </b> her er leading sat til en ofte anbefalet værdi, som er
+                        120% af størrelsen af skrifttypen. Dvs. hvis din skrifttype er 10pt, så skal leading være 12pt.
+                    </li>
+                    <li id="li-tekst-style"><b>Eksempel 3: </b>nu er leading sat til 200% af skriftstørrelsen, og det er
+                        selvfølgelig får meget i denne kontekst. Det ødelægger fuldstændig flowet i teksten.</li>
+
+
+                </ul>
+
+
+            </li>
+
+            <hr>
+
+            <h4>Tracking (eller afstand mellem bogstaver):</h4>
+            Dette hedder ”letter-spacing” i CSS, og et eksempel på tracking kunne se sådan her ud:
+            <img src="Billeder/tracking.jpg" alt="">
+            <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/qCO4iRW">Direkte Link til
+                        tracking eksempel</a></b> </span>
+            <span id="source-tekst">
+                <b>Kilde: <a href="https://www.webfx.com/blog/web-design/the-basics-of-typography/">Klik her</a></b>
+            </span>
+            Tracking kan beskrives med ordene løs eller stram. At have en løs tracking er at have mere mellemrum mellem
+            en gruppe bogstaver, mens en stram tracking er når bogstaverne står meget tættere op ad hinanden. Tracking
+            har mere eller mindre de samme guidelines som leading har, og har også stor betydning for læsbarheden af
+            teksten. Jo længere en linje tekst er, jo løsere tracking skal man bruge, og omvendt, jo kortere en linke,
+            jo strammere en tracking.
+
+            <hr>
+
+            <h4>Kerning:</h4>
+            Kerning er med til at bestemme afstanden mellem to bogstaver specifikt. Der bliver ofte en forvirring mellem
+            kerning og tracking. Tracking er at se på bogstaverne samlet, og derudfra bestemmer afstanden mellem dem,
+            mens kerning er at kigge ned på det mikroskopiske niveau, og bestemme afstanden mellem to udvalgte
+            bogstaver. Kerning er derfor muligheden for at justere afstanden mellem to bogstaver, for at gøre det
+            lettere at læse teksten, og så man også får et godt flow. Husk altid, at man som læser ikke lægger mærke til
+            god typografi, fordi at man som læser netop føler at det hele bare kører.
+            <img src="Billeder/kerning.jpg" alt="">
+            <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/6vRlbqs">Direkte Link til
+                        kerning eksempel</a></b> </span>
+            <span id="source-tekst">
+                <b>Kilde: <a href="https://www.webfx.com/blog/web-design/the-basics-of-typography/">Klik her</a></b>
+            </span>
+
+            <hr>
+
+            <h4>Alignment</h4>
+            Alt efter hvordan man vælger at aligne sin tekst, så vil det selvfølgelig også få konsekvenser for hvordan
+            en læser opfatter teksten, og om de føler at teksten er let at læse. At kunne bestemme alignment, er helt op
+            til en selv, og kommer an på ens eget tema. Her er eksempler på hvordan man kan aligne teksten:
+            <li id="nested-list">
+
+                <ul id="ul-tekst-style">
+
+                    <li id="li-tekst-style"><b>Flush left: </b> her er teksten forskudt til venstre, og er også den mest
+                        naturlige form for alignment, her i vesten. </li>
+                    <li id="li-tekst-style"><b>Flush right: </b> teksten er forskudt mod højre, dette kan være med til
+                        at ødelægge flowet for os som læser fra venstre til højre, og skal ikke bruges som en norm, men
+                        derimod som et værktøj som kan skabe kontrast mellem de forskellige afsnit og linjer.
+                    </li>
+                    <li id="li-tekst-style"><b>Justified: </b>er når starten og slutningen af en linje tekst, er begge
+                        aligned til venstre og højre. Selvom justified ser ret god ud i sig selv, så kan det være lidt
+                        svært at læse for nogen, da der er mindre visuel feedback på når en linje er slut.</li>
+                    <li id="li-tekst-style"><b>Centered: </b>her er teksten centreret til midten af boksen i stedet for
+                        kanterne. Endnu en gang skal man passe på med hvordan man bruger centered, da det også kan være
+                        med til at ødelægge flowet af en tekst.</li>
+
+
+                </ul>
+
+            </li>
+            Her er et eksempel på ovenstående termer:
+            <img src="Billeder/alignment.jpg" alt="">
+            <span id="source-tekst"> <b> <a id="direct-img" href="https://imgur.com/a/QViAxzN">Direkte Link til
+                        alignment eksempel</a></b> </span>
+            <span id="source-tekst">
+                <b>Kilde: <a href="https://www.webfx.com/blog/web-design/the-basics-of-typography/">Klik her</a></b>
+            </span>
+
+            <hr>
+
+            Når man skal skrive en tekst, er det derfor en god ide at overveje følgende ting:
+
+            <li id="nested-list">
+
+                <ul id="ul-tekst-style">
+
+                    <li id="li-tekst-style">Hvilken skrifttype skal min titel have? </li>
+                    <li id="li-tekst-style">Hvilken skrifttype skal min brødtekst, og undertitler have?
+                    </li>
+                    <li id="li-tekst-style">Hvor skal jeg bruge bold (fed skrift), italic (kursiv skrift) eller
+                            light (normal skrift)?</li>
+
+
+
+                </ul>
+
+            </li>
+
         </ul>
     </section>
+        <!-- Typografi slut -->
+
+        <!-- Gestaltlove start -->
+    <button type="button" class="collapsible">Gestaltlove</button>
+    <section class="content">
+
+        <ul>
+
+        </ul>
+
+    </section>
+         <!-- Gestaltlove start -->
+
+
 
     <!-- Til top knap start -->
     <section>
