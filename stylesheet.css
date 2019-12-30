@@ -22,6 +22,9 @@ body {
     ;
 }
 
+.front-page-container {
+    border-top: 1px solid black;
+}
 
 #HCL {
     grid-area: HCL;
@@ -44,9 +47,6 @@ body {
     grid-area: Kilder;
 }
 
-.front-page-container {
-    border-top: 1px solid black;
-}
 
 /* Styling af grid på forsiden slut */
 
@@ -173,7 +173,7 @@ span {
 
 /* Syling af tekst slut */
 
-/* Styling af baggrunden til menuen */
+/* Styling af baggrunden til menuen start */
 ul {
     width: 100%;
     background-color: #333;
@@ -188,6 +188,13 @@ ul {
 section>ul{
     margin-top: 20px;
 }
+
+nav>ul{
+
+border: 1px solid black;
+
+}
+/* Styling af baggrunden til menuen slut */
 
 
 /* Styling af kilde links start */
