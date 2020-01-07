@@ -112,8 +112,13 @@ h1 {
     margin: 1em 0 1em 0;
     font-family: 'Fugaz One', cursive;
     font-weight: lighter;
+    text-decoration: wavy;
 }
 
+#location{
+    text-decoration: underline;
+    color: #bd4420;
+}
 
 h2 {
     font-family: 'Dosis', sans-serif;
