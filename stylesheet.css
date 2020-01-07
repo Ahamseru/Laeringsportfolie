@@ -74,7 +74,7 @@ img {
 
 /* Stlyng a billeder slut */
 
-/* Styling af øverste logo start */
+/* Styling af logo start */
 .logo img {
     max-width: 100px;
 
@@ -87,7 +87,7 @@ header>section {
 /* Styling af logo slut */
 
 
-/* Styling af banner billeder i teksten */
+/* Styling af banner billeder og kildetekst til billeder i teksten start */
 .banner {
     max-width: 80%;
     margin: 0;
@@ -101,8 +101,10 @@ header>section {
     color: #f69c55;
     text-decoration-line: underline;
 }
+/* Styling af banner billeder og kildetekst til billeder i teksten slut */
 
 
+/* Styling af headers start */
 h1 {
     text-align: center;
     font-size: 1.5em;
@@ -112,7 +114,7 @@ h1 {
     font-weight: lighter;
 }
 
-/* Styling af headers start */
+
 h2 {
     font-family: 'Dosis', sans-serif;
     color: #a1551b;
@@ -215,7 +217,6 @@ span>b>a:-webkit-any-link {
     padding: 0;
 }
 
-
 /* Styling af kilde links slut */
 
 
@@ -237,7 +238,7 @@ li a,
     font-size: 0.8em;
 }
 
-/* Styling af menu text knapper start*/
+/* Styling af menu text knapper start */
 a:active {
     background-color: rgb(128, 80, 49);
 }
@@ -247,7 +248,7 @@ a:active {
     top: 0;
     width: 100%;
 }
-
+/* Styling af menu text knapper slut */
 
 /* Styling af lists i teksten start */
 section>ul {
